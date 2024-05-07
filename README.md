@@ -89,42 +89,40 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
     4.  Hydraulic issues:
         > Is there hydraulic oil in the reservoir?  
-        > Is the pump turning? (broken coupling between motor and pump?) 
-        > Is the pump pumping?  
-        > Is there air in the hydraulic line? (Cavitation noise?)  
-        > Is the oil too hot? (Blockage at relief or check valves? Are they stuck?)  
-        > With IR camera, look for too much heat indicating too much flow where there should be less and look for too little heat indicating too little flow where there should be more.  
+        > Is the pump turning? (broken coupling between motor and pump?)  
+        > Is the oil too hot? (Blockage at relief or check valves? Are they stuck?)    
         
-
     5.  Advanced Hydraulic Troubleshooting
 
         1. Excessive noise?  
             > Air in the system? Perhaps there is air in the system from having been run dry.  
             > Cavitation Noise? Perhaps obstruction between tank and pump causing vacuum at pump input?    
  
-        2.  Coupling between motor and pump is hot? (careful)  
+        2. Is the pump turning? 
+            > Coupling between motor and pump is hot? (careful)  
             > Probably broken or slipping on a bad spline so pump not turning.  
             > Why did the coupling fail? Pump hard to turn? Why?    
 
-        3.  Pump is getting unusually hot? Oil unusually hot? Couplings to motor are breaking? Pump is hard to turn by hand?   
+        4.  Is the pump pumping?
+            > Pump is getting unusually hot? Oil unusually hot? Couplings to motor are breaking? Pump is hard to turn by hand?   
             > Suspect a bad check valve at pump output or other obstruction.  
             > Open a connection at the pump outlet to see if oil is being pumped.  
             > Be very careful – oil under pressure is very dangerous (hot oil may come out with enough force to sever limbs).  
             > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.  
             > It is very dangerous to loosen fittings when the pump is on and also when it is off because of oil injection injuries which usually result in amputation.
-            > So use tools an keep hands clear of fittings.  
+            > So use tools and keep hands clear of fittings.  
             > Point hose in a safe direction (maybe back into the tank) when turning on the pump and hold on tight.  
-            > Consider that excessively hot oil may slip past seals because of reduced viscosity.  
+            > Consider that excessively hot oil may slip past seals in cylinders because of reduced viscosity.  
             > So finding the source of heat may solve other apparent problems.   
 
-        4.  Pump is working?  
+        6.  No problem with pump and motor  
             1.  Check for signal and solenoid problems.  
                 > Actuate the valve manually under load by pressing the recessed button on the valve if available.  
-                > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section (Signal or solenoid is suspect)  
+                > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section [Signal or solenoid is suspect]()  
                 > If there is no movement or movement is unreliable then the problem is not signal or solenoid – it may be hydraulic or it may be a jam.
                 > After checking for a jam, see the section (Signal and solenoid are OK, Check for hydraulic problems)  
 
-            2.  Signal or solenoid is suspect.  
+            2.  #### Signal or solenoid is suspect.  
                 1.  Listen to the solenoid when switching on and off.  
                     > There should be some sound as the valve moves.  
                     
