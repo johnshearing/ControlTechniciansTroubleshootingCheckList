@@ -140,14 +140,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > If there is still no voltage between hot and common then check for voltage between hot and a known good common or go directly to the common terminal of the power supply.
                     > If there is voltage now then you know you have a broken common otherwise it’s a shorted coil.
                     
-# work on document is complete only to this point. More work will continue
-
-                5.  If there is not access to the normal signal voltage
+                4.  If there is not access to the normal signal voltage
                     then apply voltage to the solenoid with a power
                     supply, battery, or by pig tail or try swapping it
                     out for a new one.
 
-            2.  #### Signal and solenoid are OK, Check for hydraulic problems.
+            3.  #### Signal and solenoid are OK, Check for hydraulic problems.
 
                 1.  If the load does not move when valve is actuated
                     > manually, then the trouble is lack of oil pressure
