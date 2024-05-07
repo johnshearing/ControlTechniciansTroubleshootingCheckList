@@ -74,40 +74,39 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Check that pneumatically or electrically operated brakes are releasing.  
         > Check that mechanical parts are receiving lubrication and are not seized.  
 
-    5.  Pneumatic issues: Does the machine have air? Where are the
-        > manually operated valves for air? Where are the pressure
-        > regulators? Check that air valves are open and that regulators
-        > are set to the correct pressure. What about oil for the air
-        > lines. Does the automatic oil dispenser have oil in the cup?
-        > Lack of lubrication for air operated devices is a huge source
-        > of problems on the prefeeders. Listen for leaks especially
-        > around the conveyors and the corrugator rollstands.
+    5.  Pneumatic issues:  
+        > Does the machine have air?  
+        > Where are the manually operated valves for air?  
+        > Where are the pressure regulators?  
+        > Check that air valves are open and that regulators are set to the correct pressure.  
+        > What about oil for the air lines?  
+        > Does the automatic oil dispenser have oil in the cup?  
+        > Lack of lubrication for air operated devices is a huge source of problems.  
+        > Listen for air leaks and broken air hoses.  
 
-    6.  Hydraulic issues: Is there hydraulic oil in the reservoir? Is
-        > the pump turning (broken coupling?) Is the pump pumping (There
-        > should be some heat at the output. Check with IR camera)? Is
-        > there air in the hydraulic line (cavitation noise)? Is the oil
-        > too hot (blockage at relief or check valves? Are they stuck?),
-        > Look for too much IR indicating too much flow where there
-        > should be less and look for too little heat indicating too
-        > little flow where there should be more.
+    7.  Hydraulic issues:
+        > Is there hydraulic oil in the reservoir?  
+        > Is the pump turning? (broken coupling between motor and pump?)  
+        > Is the pump pumping? (There should be some heat at the output. Check with IR camera)  
+        > Is there air in the hydraulic line? (Cavitation noise?)  
+        > Is the oil too hot? (Blockage at relief or check valves? Are they stuck?)  
+        > Look for too much IR heat indicating too much flow where there should be less and look for too little heat indicating too little flow where there should be more.  
 
-    7.  Power issues: Does the machine have power? Where are the
+    9.  Power issues: Does the machine have power? Where are the
         > Disconnects, Fuse Boxes, Electrical Cabinets, Power Switches,
         > Fuses, Breakers, and Overloads? Look these over. Exercise
         > overloads while power is off – sometimes this helps when
         > contacts and aux contacts are worn. Suspect loose wires at
         > terminals or loose terminal blocks.
 
-    8.  Are the electrical parts too hot or too cool? Motors, Wires,
+    10.  Are the electrical parts too hot or too cool? Motors, Wires,
         > Connections, Fuses, Power supplies, the PLCs, or the VFDs too
         > hot? Check with an IR camera. Open doors and find ways to move
         > air. Blow dust out of drives and heat exchangers. Tighten
         > connections. Replace fuses.
 
-<!-- -->
 
-1.  Control issues:
+3.  Control issues:
 
     1.  Where are the Estops and Safety Gates? Pull out E-Stops and
         > ensure that all gates are closed.
@@ -158,9 +157,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > start blowing. The blown fuses will lead you to the
             > shorting component.
 
-    <!-- -->
 
-    1.  Shorted Motors
+
+    5.  Shorted Motors
 
         1.  Short circuits in DC Motors: Index motor and check all
             > windings for resistance. Then check between field windings
@@ -180,7 +179,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > measurements on that winding are greater than on the other
             > two.
 
-    2.  When machines move erratically, move uncommanded, stop
+    6.  When machines move erratically, move uncommanded, stop
         > uncommanded, won’t move, or move at a speed unexpected:
 
         1.  Ensure that all the controls are set correctly.
@@ -258,9 +257,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         23. Suspect overheating hydraulics and bad seals.
 
-<!-- -->
 
-1.  If there is a momentary loss of power (just a second or less)
+
+7.  If there is a momentary loss of power (just a second or less)
     (usually 24 volt systems but sometimes 110 too.)
 
     1.  This is most likely a short circuit. This may seem odd if no
@@ -276,7 +275,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         disappears. Then it is a simple matter of running down the
         short.
 
-2.  When motors are not moving.
+8.  When motors are not moving.
 
     1.  Check if contactors are getting signal. If not see item 4 “If
         > not moving for lack of signal”.
@@ -565,9 +564,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 47. Check that Contactor or solenoid is not getting
                     signal.
 
-<!-- -->
 
-1.  Hydraulics and Pneumatics
+
+9.  Hydraulics and Pneumatics
 
     1.  Check if there is hydraulic oil in the reservoir and that the
         > pump is running. If there is excessive noise or heat then we
@@ -595,7 +594,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Point hose in a safe direction when turning on the pump
             > and hold on tight.
 
-    <!-- -->
+
 
     1.  If the pump is working, check for signal and solenoid problems.
 
@@ -686,9 +685,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                             > the piston independently to see if either
                             > of are jammed.
 
-<!-- -->
 
-1.  Glue Systems:
+
+10.  Glue Systems:
 
     1.  Various Parts:
 
@@ -769,9 +768,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > filter clogged? Is pump working? Is Tank valve open? Is
             > cover on top of tank lose?
 
-<!-- -->
 
-7.  Jumping out NPN and PNP Sensors
+
+11.  Jumping out NPN and PNP Sensors
 
     1.  Pull the sensor wires out of the cabinet after marking them and
         jump the PLC input Hi or Low as required.
@@ -993,9 +992,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 provide and wire to the input if you want the PLC to
                 think that the sensor has been deactivated.
 
-<!-- -->
 
-8.  Sinking and Sourcing Cards
+
+12.  Sinking and Sourcing Cards
 
     1.  It is possible that signal lines start at ground and are pulled
         to 24 volts when switches are closed.
@@ -1004,7 +1003,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         1.  There is one common terminal which is at 0 volts.
 
-<!-- -->
+
 
 1.  2.  2.  The inputs are at 24 volts when False (unlit) and 0 volts
             when True (lit).
@@ -1013,7 +1012,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         1.  There is one common terminal at 24 volts.
 
-<!-- -->
+
 
 1.  1.  2.  The inputs are at 0 volts when False (unlit) and 24 volts
             when True (lit).
