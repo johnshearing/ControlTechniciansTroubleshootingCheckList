@@ -118,9 +118,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         6.  No problem with pump and motor  
             1.  Check for signal and solenoid problems.  
                 > Actuate the valve manually under load by pressing the recessed button on the valve if available.  
-                > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section [Signal or solenoid is suspect]()  
+                > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section [Signal or solenoid is suspect](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#signal-or-solenoid-is-suspect)  
                 > If there is no movement or movement is unreliable then the problem is not signal or solenoid – it may be hydraulic or it may be a jam.
-                > After checking for a jam, see the section (Signal and solenoid are OK, Check for hydraulic problems)  
+                > After checking for a jam, see the section [Signal and solenoid are OK, Check for hydraulic problems]()  
 
             2.  #### Signal or solenoid is suspect.  
                 1.  Listen to the solenoid when switching on and off.  
@@ -147,7 +147,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     supply, battery, or by pig tail or try swapping it
                     out for a new one.
 
-            2.  Signal and solenoid are OK, Check for hydraulic problems.
+            2.  #### Signal and solenoid are OK, Check for hydraulic problems.
 
                 1.  If the load does not move when valve is actuated
                     > manually, then the trouble is lack of oil pressure
