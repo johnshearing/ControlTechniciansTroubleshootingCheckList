@@ -97,6 +97,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         
 
     5.  Advanced Hydraulic Troubleshooting
+
         1. Excessive noise?  
             > Air in the system? Perhaps there is air in the system from having been run dry.  
             > Cavitation Noise? Perhaps obstruction between tank and pump causing vacuum at pump input?    
@@ -118,42 +119,37 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         4.  Pump is working?  
             1.  Check for signal and solenoid problems.  
-                > Actuate the solenoid manually under load by pressing the recessed button on solenoid if available.  
-                > If this moves the load reliably, then we know that the trouble is the solenoid or signal.  
-                > If movement is unreliable then we probably have a jam at the load.  
-                > If there is no movement then the problem is not signal – it may be hydraulic or it may be a jam.  
+                > Actuate the valve manually under load by pressing the recessed button on the valve if available.  
+                > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section (Signal or solenoid is suspect)  
+                > If there is no movement or movement is unreliable then the problem is not signal or solenoid – it may be hydraulic or it may be a jam.
+                > After checking for a jam, see the section (Signal and solenoid are OK, Check for hydraulic problems)  
 
-            2.  If signal or solenoid is suspect.
+            2.  Signal or solenoid is suspect.  
+                1.  Listen to the solenoid when switching on and off.  
+                    > There should be some sound as the valve moves.  
+                    
+                2.  Notice if the solenoid is unusually hot.  
+                    > Maybe a short circuit in the solenoid.  
 
-                1.  Listen to the solenoid when switching on and off.
+                3.  Take a voltage reading with probes at each end of the coil while the control for signal is on.  
+                    > There should be full voltage when energized and none when de-energized.  
+                    > This proves signal, but still there could be an open in the solenoid.  
+                    > So disconnect the leads and compare resistance across the solenoid to a known good solenoid  
+                    > Or check for appropriate amperage going through the solenoid when operating.  
+                    > No voltage difference across the solenoid could indicate lack of signal, a short in the coil or a broken common.  
+                    > In that case disconnect the solenoid and check for voltage between the hot wire and the common when switched on.  
+                    > Voltage between hot and common wires would indicate good signal, good common, but a shorting coil in the solenoid. So change the solenoid.    
+                    > If there is still no voltage between hot and common then check for voltage between hot and a known good common or go directly to the common terminal of the power supply.
+                    > If there is voltage now then you know you have a broken common otherwise it’s a shorted coil.
+                    
+# work on document is complete only to this point. More work will continue
 
-                2.  Notice if the solenoid is unusually hot
-
-                3.  If inconclusive: take a voltage reading at each end
-                    of the coil there should be full voltage when
-                    energized and none when de-energized. This proves
-                    signal, but still there could be an open in the
-                    solenoid so disconnect the leads and compare
-                    resistance to a known good solenoid or check for
-                    appropriate amperage. No voltage could indicate lack
-                    of signal, a short in the coil or a broken common.
-                    In that case disconnect the solenoid and check for
-                    voltage on the hot wire and the common when switched
-                    on. Voltage now would indicate good signal but a
-                    shorting coil or possibly a broken common. If there
-                    is still no voltage between hot and common then
-                    check for voltage between hot and a known good
-                    common or go directly to the common terminal of the
-                    power supply. If there is voltage now then you know
-                    you have a broken common otherwise it’s a shorted
-                    coil.
-
-                4.  If there is not access to the normal signal voltage
+                5.  If there is not access to the normal signal voltage
                     then apply voltage to the solenoid with a power
                     supply, battery, or by pig tail or try swapping it
                     out for a new one.
 
-            3.  Signal is OK, Check for hydraulic problems.
+            2.  Signal and solenoid are OK, Check for hydraulic problems.
 
                 1.  If the load does not move when valve is actuated
                     > manually, then the trouble is lack of oil pressure
