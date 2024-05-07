@@ -25,7 +25,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     4.  Where are the controls for stopping the desired behavior?
 
     5.  Where are the troublesome components: air supply, oil supply, water supply, steam supply, fuses, circuit breakers, relays, contactors, PLCs, HMIs, control panels, motors, VFDs, pumps, actuators,
-        cylinders, bearings, valves, solenoids, sensors, limit switches, transducers?
+        cylinders, bearings, valves, solenoids, sensors, limit switches, encoders, resolvers, transducers?
 
     6.  Did anything happen just before this problem appeared?
 
@@ -60,13 +60,16 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 2.  Mechanical issues:
 
-    1.  Is the mover cool and does it move easily when controls are activated?  
+    1. Loose or broken mechanical connections:
+        > Is the motor cool and does it move easily when controls are activated?  
+        > Does the motor not move the load?
         > Look for lose gears, loose set screws, broken belts, broken chains, broken shear pins, and broken couplings.  
         > Check for worn out keyways and missing keys, worn out or misadjusted clutches and brakes, leaking seals at cylinders and valves.  
         > Check that electrically operated clutches are engaging.  
 
-    3.  Is the mover and or the bearings hot?  
-        > Does the mover strain when controls are activated or not move at all?  
+    2. Jammed mechanicals:
+        > Is the motor and or the bearings hot?  
+        > Does the motor strain when controls are activated or not move at all?  
         > Check fuses and circuit breakers first if the mover appears dead or if single phasing is suspected.  
         > Then look for material jams.  
         > Look for loose bolts or bolts which have fallen out and for loose parts which have shifted and consequently jammed.  
@@ -74,7 +77,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Check that pneumatically or electrically operated brakes are releasing.  
         > Check that mechanical parts are receiving lubrication and are not seized.  
 
-    5.  Pneumatic issues:  
+    3.  Pneumatic issues:  
         > Does the machine have air?  
         > Where are the manually operated valves for air?  
         > Where are the pressure regulators?  
@@ -82,9 +85,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > What about oil for the air lines?  
         > Does the automatic oil dispenser have oil in the cup?  
         > Lack of lubrication for air operated devices is a huge source of problems.  
-        > Listen for air leaks and broken air hoses.  
+        > Listen for air leaks, broken air hoses, broken seals at pneumatic cylinders.  
 
-    7.  Hydraulic issues:
+    4.  Hydraulic issues:
         > Is there hydraulic oil in the reservoir?  
         > Is the pump turning? (broken coupling between motor and pump?)  
         > Is the pump pumping? (There should be some heat at the output. Check with IR camera)  
@@ -92,14 +95,16 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Is the oil too hot? (Blockage at relief or check valves? Are they stuck?)  
         > Look for too much IR heat indicating too much flow where there should be less and look for too little heat indicating too little flow where there should be more.  
 
-    9.  Power issues: Does the machine have power? Where are the
+3. Power issues:
+        > Does the machine have power? Where are the
         > Disconnects, Fuse Boxes, Electrical Cabinets, Power Switches,
         > Fuses, Breakers, and Overloads? Look these over. Exercise
         > overloads while power is off – sometimes this helps when
         > contacts and aux contacts are worn. Suspect loose wires at
         > terminals or loose terminal blocks.
 
-    10.  Are the electrical parts too hot or too cool? Motors, Wires,
+7. Heat issues:
+        > Are the electrical parts too hot? Motors, Wires,
         > Connections, Fuses, Power supplies, the PLCs, or the VFDs too
         > hot? Check with an IR camera. Open doors and find ways to move
         > air. Blow dust out of drives and heat exchangers. Tighten
@@ -108,13 +113,13 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 3.  Control issues:
 
-    1.  Where are the Estops and Safety Gates? Pull out E-Stops and
+    3.  Where are the Estops and Safety Gates? Pull out E-Stops and
         > ensure that all gates are closed.
 
-    2.  Operate the control or switch if possible. Check the lights on
+    4.  Operate the control or switch if possible. Check the lights on
         > the PLC.
 
-    3.  If no input lights then we have a problem with the switch
+    5.  If no input lights then we have a problem with the switch
         > circuit. If no output lights then we have a logic problem –
         > all conditions for activation have not been met. It is also
         > possible but not likely that no output means a bad output card
@@ -140,7 +145,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > the machine is off. Check the ladder logic if possible with a
         > Laptop PC to see what conditions are not being met.
 
-    4.  Fried components:
+    6.  Fried components:
 
         1.  Ask what devices are being energized at the moment your
             > components are being fried? Ladder logic and electrical
@@ -159,7 +164,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 
 
-    5.  Shorted Motors
+    7.  Shorted Motors
 
         1.  Short circuits in DC Motors: Index motor and check all
             > windings for resistance. Then check between field windings
@@ -179,7 +184,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > measurements on that winding are greater than on the other
             > two.
 
-    6.  When machines move erratically, move uncommanded, stop
+    8.  When machines move erratically, move uncommanded, stop
         > uncommanded, won’t move, or move at a speed unexpected:
 
         1.  Ensure that all the controls are set correctly.
