@@ -96,8 +96,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > With IR camera, look for too much heat indicating too much flow where there should be less and look for too little heat indicating too little flow where there should be more.  
         
 
-    9.  Advanced Hydraulic Troubleshooting
-
+    5.  Advanced Hydraulic Troubleshooting
         1. Excessive noise?  
             > Air in the system? Perhaps there is air in the system from having been run dry.  
             > Cavitation Noise? Perhaps obstruction between tank and pump causing vacuum at pump input?    
@@ -106,26 +105,23 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Probably broken or slipping on a bad spline so pump not turning.  
             > Why did the coupling fail? Pump hard to turn? Why?    
 
-        3.  Pump is getting unusually hot? Oil unusually hot? Couplings to motor are breaking? Pump is hard to turn by hand?  
+        3.  Pump is getting unusually hot? Oil unusually hot? Couplings to motor are breaking? Pump is hard to turn by hand?   
             > Suspect a bad check valve at pump output or other obstruction.  
-            > Open a connection at the pump outlet to see if oil is being pumped.  
+            > Open a connection at the pump outlet to see if oil is being pumped.  
             > Be very careful – oil under pressure is very dangerous (hot oil may come out with enough force to sever limbs).  
             > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.  
-            > It is very dangerous to loosen fittings when the pump is on and also when it is off because of oil injection injuries which usually result in amputation.  
-            > Point hose in a safe direction when turning on the pump and hold on tight.  
+            > It is very dangerous to loosen fittings when the pump is on and also when it is off because of oil injection injuries which usually result in amputation.
+            > So use tools an keep hands clear of fittings.  
+            > Point hose in a safe direction (maybe back into the tank) when turning on the pump and hold on tight.  
             > Consider that excessively hot oil may slip past seals because of reduced viscosity.  
-            > So finding the source of heat may solve other apparent problems. 
+            > So finding the source of heat may solve other apparent problems.   
 
-    1.  If the pump is working, check for signal and solenoid problems.
-
-        1.  Actuate the solenoid manually under load by pressing the
-            > recessed button if available.
-
-        2.  If this moves the load reliably, then we know that the
-            > trouble is the solenoid or signal. If movement is
-            > unreliable then we probably have a jam at the load. If
-            > there is no movement then the problem is not signal – it
-            > may be hydraulic or it may be a jam.
+        4.  Pump is working?  
+            1.  Check for signal and solenoid problems.  
+                > Actuate the solenoid manually under load by pressing the recessed button on solenoid if available.  
+                > If this moves the load reliably, then we know that the trouble is the solenoid or signal.  
+                > If movement is unreliable then we probably have a jam at the load.  
+                > If there is no movement then the problem is not signal – it may be hydraulic or it may be a jam.  
 
             2.  If signal or solenoid is suspect.
 
