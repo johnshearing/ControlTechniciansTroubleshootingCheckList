@@ -122,7 +122,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Consider that excessively hot oil may slip past seals in cylinders because of reduced viscosity.  
             > So finding the source of excessive heat may solve other apparent problems.   
 
-        5.  No problem with pump and motor  
+        5.  Getting Flow: No problem with pump and motor  
             1.  Check for signal and solenoid problems.  
                 > Actuate the valve manually under load by pressing the recessed button on the valve if available.  
                 > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section [Signal or solenoid is suspect](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#signal-or-solenoid-is-suspect)  
