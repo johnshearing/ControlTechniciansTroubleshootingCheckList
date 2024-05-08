@@ -163,41 +163,21 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > Check for blown out seals on cylinders before checking valves so as to prevent miss-diagnosing a valve as the problem.  
 
                 2.  Check for damaged seals in the cylinder  
-                    > Oil may be leaking past seals instead of moving the load.   
-                    > If oil is coming out of the exhaust when the piston is at full stroke or not moving then the seals or the ram must be damaged.  
-                    > Open hose a connectionat the actuator input 1st to check that there is oil pressure and flow.  
-                    > then the actuator exhaust,
-                        then the valve, and finally the pump to check
-                        for oil flow.  
-                    > If oil flows to the valves input, then check
-                            that no oil comes out the output when the
-                            cylinder is at the end of travel or if it is
-                            not moving. If oil comes out at the end of
-                            travel or when the cylinder is not moving then
-                            the seals are blown.  
-                    > If no oil flows to the input of the
-                            actuator, then check that the valve is
-                            moving. We may think we hear the valve
-                            moving as the solenoid is activated but
-                            removing the output hose to see if oil or
-                            air comes out will tell us for sure that the
-                            valve is moving.
-                    > If everything checks out so far, then there
-                            is probably a jam at the load.  
-                    > Actuate the cylinders and loads by hand to see
-                        if there is a jam.
-                    >  Disconnect hoses from the cylinder and
-                            disconnect the load from the cylinder as
-                            well. Then attempt to move the load and
-                            the piston independently to see if either
-                            of are jammed.
+                    > Oil may be leaking past seals instead of moving the load.  
+                    > If oil is coming out of the exhaust when the piston is at full stroke or when not moving then the seals must be damaged.  
+                    > To test, open the hose connection at the cylinder input to check that there is oil pressure and flow.  
+                    > If there is no flow then your problem is back at the valve or in the hose.  
+                    > Assuming there is flow, return and tighten the hose connection at the cylinder input and open the connection at the exhaust.  
+                    > Turn on the pump again.  
+                    > When the piston reaches full stroke or when it stops moving, there should be no oil comming out of the exhaust.  
+                    > If oil is coming out the exhaust when the piston is at full stroke then the seals are damaged.   
+                    > If everything checks out so far, then there is probably a jam at the load.   
+                    > Actuate the cylinders and loads by hand to see if there is a jam.  
+                    > Disconnect the cylinder from the load.  
+                    > Then attempt to move the load and the piston independently to see if either are jammed.  
 
+# Work on document is complete to this point. More work tomorrow.
 
-
-
-
-
-        
 
 3. Power issues:
         > Does the machine have power? Where are the
