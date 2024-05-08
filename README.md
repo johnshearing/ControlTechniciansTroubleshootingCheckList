@@ -92,15 +92,15 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Is the pump turning? (broken coupling between motor and pump?)  
         > Is the oil too hot? (Blockage at relief or check valves? Are they stuck?)    
         
-    5.  Advanced Hydraulic Troubleshooting
+    5.  Advanced Hydraulic Troubleshooting. Much applies to pneumatics as well
 
         1. Excessive noise?  
             > Air in the system? Perhaps there is air in the system from having been run dry.  
             > Cavitation Noise? Perhaps obstruction between tank and pump causing vacuum at pump input?    
  
         2. Is the pump turning? 
-            > Coupling between motor and pump is hot? (careful)  
-            > Probably broken or slipping on a bad spline so pump not turning.  
+            > Coupling between motor and pump hot? (careful)  
+            > Probably broken coupling or slipping on a bad spline so pump not turning.  
             > Why did the coupling fail? Pump hard to turn? Why?    
 
         4.  Is the pump pumping?
@@ -137,61 +137,53 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > No voltage difference across the solenoid could indicate lack of signal, a short in the coil or a broken common.  
                     > In that case disconnect the solenoid and check for voltage between the hot wire and the common when switched on.  
                     > Voltage between hot and common wires would indicate good signal, good common, but a shorting coil in the solenoid. So change the solenoid.    
-                    > If there is still no voltage between hot and common then check for voltage between hot and a known good common or go directly to the common terminal of the power supply.
+                    > If there is still no voltage between hot and common then check for voltage between hot and a known good common or go directly to the common terminal of the power supply.  
                     > If there is voltage now then you know you have a broken common otherwise it’s a shorted coil.
                     
-                4.  If there is not access to the normal signal voltage
-                    then apply voltage to the solenoid with a power
+                4.  If there is no access to the normal signal voltage:
+                    > Then apply voltage to the solenoid with a power
                     supply, battery, or by pig tail or try swapping it
                     out for a new one.
 
             3.  #### Signal and solenoid are OK, Check for hydraulic problems.
 
-                1.  If the load does not move when valve is actuated
-                    > manually, then the trouble is lack of oil pressure
-                    > at the valve or a jam at the actuator or blown out
-                    > seals. Igor advises to check for blown out seals
-                    > before checking valves and regulators so as to
-                    > prevent miss-diagnosing a valve as the problem.
+                1.  If the load does not move when valve is actuated manually:
+                    > Then the trouble is one of the following:  
+                    > a. Valve is stuck  
+                    > b. Lack of oil pressure at the valve input  
+                    > c. Lack of oil pressure at the actuator input  
+                    > d. Blown out seals in the cylinder or actuator   
+                    > Check for blown out seals on cylinders before checking valves so as to prevent miss-diagnosing a valve as the problem.  
 
-                2.  Check for damaged seals in the cylinder where oil or
-                    > air may be leaking through instead of moving the
-                    > load. If air or oil is coming out of the exhaust
-                    > when the piston is at full stroke or not moving
-                    > then the seals or the ram is damaged.
-
-                    3.  Generally, open a hose connection at the
+                3.  Check for damaged seals in the cylinder  
+                    > Oil may be leaking past seals instead of moving the load.   
+                    > If oil is coming out of the exhaust when the piston is at full stroke or not moving then the seals or the ram is damaged.
+                    > Generally, open a hose connections to check for flow at the
                         actuator input 1st, then the actuator exhaust,
                         then the valve, and finally the pump to check
-                        for oil flow. This also bleeds the line of air
-                        if that is the problem.
-
-                        1.  If oil flows to the valves input, then check
+                        for oil flow.  
+                    > If oil flows to the valves input, then check
                             that no oil comes out the output when the
                             cylinder is at the end of travel or if it is
                             not moving. If oil comes out at the end of
-                            travel or if the cylinder is not moving then
-                            the seals are blown.
-
-                        2.  If no oil flows to the input of the
+                            travel or when the cylinder is not moving then
+                            the seals are blown.  
+                    > If no oil flows to the input of the
                             actuator, then check that the valve is
                             moving. We may think we hear the valve
                             moving as the solenoid is activated but
                             removing the output hose to see if oil or
                             air comes out will tell us for sure that the
                             valve is moving.
-
-                        3.  If everything checks out so far, then there
-                            is probably a jam at the load.
-
-                    4.  Actuate the cylinders and loads by hand to see
+                    > If everything checks out so far, then there
+                            is probably a jam at the load.  
+                    > Actuate the cylinders and loads by hand to see
                         if there is a jam.
-
-                        1.  Disconnect hoses from the cylinder and
-                            > disconnect the load from the cylinder as
-                            > well. Then attempt to move the load and
-                            > the piston independently to see if either
-                            > of are jammed.
+                    >  Disconnect hoses from the cylinder and
+                            disconnect the load from the cylinder as
+                            well. Then attempt to move the load and
+                            the piston independently to see if either
+                            of are jammed.
 
 
 
