@@ -95,7 +95,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     5.  Advanced Hydraulic Troubleshooting. Much applies to pneumatics as well
 
         1. Caution!
-           > Pneumatic equipment can move with explosive speed. Stay clear!
+           > Pneumatic equipment can move with explosive speed. Stay clear!  
            > Hydraulic oil under pressure is very dangerous: Oil and may come out with enough force to sever limbs.  
            > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.  
            > Hot oil burns   
@@ -139,7 +139,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 3.  Take a voltage reading with probes at each end of the coil while the control for signal is on.  
                     > There should be full voltage when energized and none when de-energized.  
                     > This proves signal, but still there could be an open in the solenoid.  
-                    > So disconnect the leads and compare resistance across the solenoid to a known good solenoid  
+                    > So disconnect the leads and compare resistance across the solenoid to a known good solenoid   
                     > Or check for appropriate amperage going through the solenoid when operating.  
                     > No voltage difference across the solenoid could indicate lack of signal, a short in the coil or a broken common.  
                     > In that case disconnect the solenoid and check for voltage between the hot wire and the common when switched on.  
