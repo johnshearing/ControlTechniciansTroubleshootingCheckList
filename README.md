@@ -96,11 +96,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         1. Caution!
            > Pneumatic equipment can move with explosive speed. Stay clear!  
-           > Hydraulic oil under pressure is very dangerous: Oil and may come out with enough force to sever limbs.  
+           > Hydraulic oil under pressure may come out with enough force to sever limbs.  
            > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.  
            > Hot oil burns   
            > Oil injection injuries usually result in amputation.  
-           > So when opening hydraulic fittings: use tools, and keep hands clear of fittings, and watch for falling loads.  
+           > So when opening hydraulic fittings: use tools, keep hands clear of fittings, and watch for falling loads as oil is released from cylinders.  
            
         2. Excessive noise?  
             > Air in the system? Perhaps there is air in the system from having been run dry.  
