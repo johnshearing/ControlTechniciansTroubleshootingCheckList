@@ -171,8 +171,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > Turn on the pump again.  
                     > When the piston reaches full stroke or when it stops moving, there should be no oil comming out of the exhaust.  
                     > If oil is coming out the exhaust when the piston is at full stroke then the seals are damaged.   
-                    > If everything checks out so far, then there is probably a jam at the load.   
-                    > Actuate the cylinders and loads by hand to see if there is a jam.  
+                    > If everything checks out so far, then there is probably a jam at the load.    
                     > Disconnect the cylinder from the load.  
                     > Then attempt to move the load and the piston independently to see if either are jammed.  
 
