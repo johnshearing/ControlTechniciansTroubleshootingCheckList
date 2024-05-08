@@ -94,11 +94,19 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         
     5.  Advanced Hydraulic Troubleshooting. Much applies to pneumatics as well
 
-        1. Excessive noise?  
+        1. Caution!
+           > Pneumatic equipment can move with explosive speed. Stay clear!
+           > Hydraulic oil under pressure is very dangerous: Oil and may come out with enough force to sever limbs.  
+           > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.  
+           > Hot oil burns   
+           > Oil injection injuries usually result in amputation.  
+           > So when opening hydraulic fittings: use tools, and keep hands clear of fittings, and watch for falling loads.  
+           
+        2. Excessive noise?  
             > Air in the system? Perhaps there is air in the system from having been run dry.  
             > Cavitation Noise? Perhaps obstruction between tank and pump causing vacuum at pump input?    
  
-        2. Is the pump turning? 
+        3. Is the pump turning? 
             > Coupling between motor and pump hot? (careful)  
             > Probably broken coupling or slipping on a bad spline so pump not turning.  
             > Why did the coupling fail? Pump hard to turn? Why?    
@@ -107,15 +115,14 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Pump is getting unusually hot? Oil unusually hot? Couplings to motor are breaking? Pump is hard to turn by hand?   
             > Suspect a bad check valve at pump output or other obstruction.  
             > Open a connection at the pump outlet to see if oil is being pumped.  
-            > Be very careful – oil under pressure is very dangerous (hot oil may come out with enough force to sever limbs).  
-            > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.  
-            > It is very dangerous to loosen fittings when the pump is on and also when it is off because of oil injection injuries which usually result in amputation.
-            > So use tools and keep hands clear of fittings.  
-            > Point hose in a safe direction (maybe back into the tank) when turning on the pump and hold on tight.  
+            > Be very careful – oil under pressure is very dangerous.  
+            > Even when the pump is off the oil may be pressurized by an accumulator or by a heavy load on the hydraulic cylinders.   
+            > It is very dangerous to loosen fittings when the pump is on and also when it is off because of burns, oil injection injuries, and falling loads.   
+            > Point hose in a safe direction (maybe back into the tank) when turning on the pump and hold on tight and be ready to turn the pump off.  
             > Consider that excessively hot oil may slip past seals in cylinders because of reduced viscosity.  
-            > So finding the source of heat may solve other apparent problems.   
+            > So finding the source of excessive heat may solve other apparent problems.   
 
-        6.  No problem with pump and motor  
+        5.  No problem with pump and motor  
             1.  Check for signal and solenoid problems.  
                 > Actuate the valve manually under load by pressing the recessed button on the valve if available.  
                 > If this moves the load reliably, then we know that the trouble is the signal or solenoid. See the next section [Signal or solenoid is suspect](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#signal-or-solenoid-is-suspect)  
@@ -155,11 +162,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > d. Blown out seals in the cylinder or actuator   
                     > Check for blown out seals on cylinders before checking valves so as to prevent miss-diagnosing a valve as the problem.  
 
-                3.  Check for damaged seals in the cylinder  
+                2.  Check for damaged seals in the cylinder  
                     > Oil may be leaking past seals instead of moving the load.   
-                    > If oil is coming out of the exhaust when the piston is at full stroke or not moving then the seals or the ram is damaged.
-                    > Generally, open a hose connections to check for flow at the
-                        actuator input 1st, then the actuator exhaust,
+                    > If oil is coming out of the exhaust when the piston is at full stroke or not moving then the seals or the ram must be damaged.  
+                    > Open hose a connectionat the actuator input 1st to check that there is oil pressure and flow.  
+                    > then the actuator exhaust,
                         then the valve, and finally the pump to check
                         for oil flow.  
                     > If oil flows to the valves input, then check
