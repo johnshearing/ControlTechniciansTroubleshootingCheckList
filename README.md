@@ -77,7 +77,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Check that pneumatically or electrically operated brakes are releasing.  
         > Check that mechanical parts are receiving lubrication and are not seized.  
 
-    3.  Pneumatic issues:  
+    3.  Basic Pneumatic issues:  
         > Does the machine have air?  
         > Where are the manually operated valves for air?  
         > Where are the pressure regulators?  
@@ -87,7 +87,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Lack of lubrication for air operated devices is a huge source of problems.  
         > Listen for air leaks, broken air hoses, broken seals at pneumatic cylinders.  
 
-    4.  Hydraulic issues:
+    4.  Basic Hydraulic issues:
         > Is there hydraulic oil in the reservoir?  
         > Is the pump turning? (broken coupling between motor and pump?)  
         > Is the oil too hot? (Blockage at relief or check valves? Are they stuck?)    
@@ -129,7 +129,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > If there is no movement or movement is unreliable then the problem is not signal or solenoid – it may be hydraulic or it may be a jam.
                 > After checking for a jam, see the section [Signal and solenoid are OK, Check for hydraulic problems](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#signal-and-solenoid-are-ok-check-for-hydraulic-problems)  
 
-            2.  #### Signal or solenoid is suspect.  
+            2.  #### Signal or solenoid is suspect.
+
                 1.  Listen to the solenoid when switching on and off.  
                     > There should be some sound as the valve moves.  
                     
@@ -152,7 +153,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     supply, battery, or by pig tail or try swapping it
                     out for a new one.
 
-            3.  #### Signal and solenoid are OK, Check for hydraulic problems.
+            4.  #### Signal and solenoid are OK, Check for hydraulic problems.
 
                 1.  If the load does not move when valve is actuated manually:
                     > Then the trouble is one of the following:  
@@ -173,36 +174,39 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > If oil is coming out the exhaust when the piston is at full stroke then the seals are damaged.   
                     > If everything checks out so far, then there is probably a jam at the load.    
                     > Disconnect the cylinder from the load.  
-                    > Then attempt to move the load and the piston independently to see if either are jammed.  
-
-# Work on document is complete to this point. More work tomorrow.
+                    > Then attempt to move the load and the piston independently to see if either are jammed. 
 
 
-3. Power issues:
-        > Does the machine have power? Where are the
-        > Disconnects, Fuse Boxes, Electrical Cabinets, Power Switches,
-        > Fuses, Breakers, and Overloads? Look these over. Exercise
-        > overloads while power is off – sometimes this helps when
-        > contacts and aux contacts are worn. Suspect loose wires at
-        > terminals or loose terminal blocks.
+3.  Electrical issues: [Review safety talk here]()
 
-7. Heat issues:
-        > Are the electrical parts too hot? Motors, Wires,
-        > Connections, Fuses, Power supplies, the PLCs, or the VFDs too
-        > hot? Check with an IR camera. Open doors and find ways to move
-        > air. Blow dust out of drives and heat exchangers. Tighten
-        > connections. Replace fuses.
 
+    1.  Basic Power issues:  
+        > Does the machine have power?  
+        > Is the machine plugged in?  
+        > Where are the Disconnects, Fuse Boxes, Electrical Cabinets, Power Switches, Fuses, Breakers, and Overloads?  
+        > Look these over.
+        > If there are no obvious problems then check with a volt meter starting with power terminals coming into the machine.   
+        > Exercise overloads while power is off – sometimes this helps when contacts and aux contacts are worn.  
+        > Suspect loose wires at terminals or loose terminal blocks.  
+
+
+    7.  Basic Heat issues:  
+        > Are the electrical parts too hot?  
+        > Are Motors, Wires, Connections, Fuses, Power supplies, the PLCs, or the VFDs too hot?  
+        > Check with an IR camera.  
+        > Open doors and find ways to move air.  
+        > Blow dust out of drives and heat exchangers.  
+        > Tighten connections. Replace fuses.  
 
 3.  Control issues:
 
-    3.  Where are the Estops and Safety Gates? Pull out E-Stops and
-        > ensure that all gates are closed.
+    3.  Where are the Estops and Safety Gates?  
+        > Pull out E-Stops and ensure that all gates are closed.  
 
-    4.  Operate the control or switch if possible. Check the lights on
+    5.  Operate the control or switch if possible. Check the lights on
         > the PLC.
 
-    5.  If no input lights then we have a problem with the switch
+    6.  If no input lights then we have a problem with the switch
         > circuit. If no output lights then we have a logic problem –
         > all conditions for activation have not been met. It is also
         > possible but not likely that no output means a bad output card
@@ -228,7 +232,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > the machine is off. Check the ladder logic if possible with a
         > Laptop PC to see what conditions are not being met.
 
-    6.  Fried components:
+    7.  Fried components:
 
         1.  Ask what devices are being energized at the moment your
             > components are being fried? Ladder logic and electrical
@@ -247,7 +251,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 
 
-    7.  Shorted Motors
+    8.  Shorted Motors
 
         1.  Short circuits in DC Motors: Index motor and check all
             > windings for resistance. Then check between field windings
@@ -267,7 +271,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > measurements on that winding are greater than on the other
             > two.
 
-    8.  When machines move erratically, move uncommanded, stop
+    9.  When machines move erratically, move uncommanded, stop
         > uncommanded, won’t move, or move at a speed unexpected:
 
         1.  Ensure that all the controls are set correctly.
