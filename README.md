@@ -177,7 +177,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > Then attempt to move the load and the piston independently to see if either are jammed. 
 
 
-3.  Electrical issues: [Review safety talk here]()
+3.  Electrical issues: [Review safety talk here](https://github.com/johnshearing/ElectricalSafety/blob/main/README.md)
 
 
     1.  Basic Power issues:  
@@ -190,7 +190,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Suspect loose wires at terminals or loose terminal blocks.  
 
 
-    7.  Basic Heat issues:  
+    2.  Basic Heat issues:  
         > Are the electrical parts too hot?  
         > Are Motors, Wires, Connections, Fuses, Power supplies, the PLCs, or the VFDs too hot?  
         > Check with an IR camera.  
@@ -198,22 +198,22 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Blow dust out of drives and heat exchangers.  
         > Tighten connections. Replace fuses.  
 
-3.  Control issues:
+    3.  Control issues:
 
-    3.  Where are the Estops and Safety Gates?  
-        > Pull out E-Stops and ensure that all gates are closed.  
+        1.  Where are the Estops and Safety Gates?  
+            > Pull out E-Stops and ensure that all gates are closed.  
 
-    5.  Operate the control or switch if possible. Check the lights on
-        > the PLC.
-
-    6.  If no input lights then we have a problem with the switch
-        > circuit. If no output lights then we have a logic problem –
-        > all conditions for activation have not been met. It is also
-        > possible but not likely that no output means a bad output card
-        > and likewise no input lights could mean a bad input card. In
-        > the case of a bad output card it is more likely that we will
-        > see the light but there will be no change in voltage. Where
-        > are the limit switches, photo eyes, reflectors, proxes,
+        2.  Operate the control or switch if possible for desired behavior.  
+            > Check the lights on the PLC.  
+            > If no input on the PLC lights up then we have a problem with the switch circuit.  
+            > If no output lights then we have a logic problem – all conditions for activation have not been met.  
+            > It is also possible but not likely that no output light means a bad output card.   
+            > and likewise no input lights could mean a bad input card.  
+            > In the case of a bad output card it is more likely that we will see the light but there will be no change in voltage.  
+            
+# document complete to this point. More work tomorrow.
+  
+            > Where are the limit switches, photo eyes, reflectors, proxes,
         > encoders, and other types of sensors? Clean these and check
         > that they are secure, dry, unbroken, functioning, focused, in
         > the correct position, obstructed or not as needed, not picking
