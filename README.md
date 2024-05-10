@@ -1,7 +1,7 @@
 # Control Technician's Troubleshooting Checklist
 Factory Electrician's/Control Technician's Troubleshooting Checklist  
 Machines may be different but they are for the most part made of the same components and perform logic.  
-So following this checklist when things go wrong should lead the technician to the source of problem even when the machines are unfamiliar.  
+So following this checklist when things go wrong should lead the technician to the source of the problem even when the machines are unfamiliar.  
 
 It may not be possible to diagnose a machine failure under lockout/tagout conditions.  
 If the machine is unfamiliar, be sure to work with machine operators that know how the machine moves and where dangerous potential energy is captive in the machine which might be relased during troubleshooting.  
@@ -35,7 +35,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         problem occurs?
 
     9.  Do I need to fix this or does the supervisor just want to run
-        right now. What will just get them going?
+        right now? What will just get them going?
 
     10. Are all the controls set properly?
 
@@ -58,12 +58,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         are usually bad. Sometimes fuse holders provide a red light to
         indicate a blown fuse.
 
-2.  #### Mechanical issues: Most issues, even those which appear to be electrical turn out to be mechanical. So lets look at the mechanical first.
+2.  #### Mechanical issues: Most issues, even those which appear to be electrical turn out to be mechanical. So let's look at the mechanical first.
 
     1. Loose or broken mechanical connections:
         > Is the motor cool and does it move easily when controls are activated?  
         > Does the motor not move the load?  
-        > Look for lose gears, loose set screws, broken belts, broken chains, broken shear pins, and broken couplings.  
+        > Look for loose gears, loose set screws, broken belts, broken chains, broken shear pins, and broken couplings.  
         > Check for worn out keyways and missing keys, worn out or misadjusted clutches and brakes, leaking seals at cylinders and valves.  
         > Check that electrically operated clutches are engaging.  
 
@@ -170,7 +170,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     > If there is no flow then your problem is back at the valve or in the hose.  
                     > Assuming there is flow, return and tighten the hose connection at the cylinder input and open the connection at the exhaust.  
                     > Turn on the pump again.  
-                    > When the piston reaches full stroke or when it stops moving, there should be no oil comming out of the exhaust.  
+                    > When the piston reaches full stroke or when it stops moving, there should be no oil coming out of the exhaust.  
                     > If oil is coming out the exhaust when the piston is at full stroke then the seals are damaged.   
                     > If everything checks out so far, then there is probably a jam at the load.    
                     > Disconnect the cylinder from the load.  
@@ -184,7 +184,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Is the machine plugged in?  
         > Where are the Disconnects, Fuse Boxes, Electrical Cabinets, Power Switches, Fuses, Breakers, and Overloads?  
         > Look these over.
-        > If there are no obvious problems then check with a volt meter starting with power terminals coming into the machine.   
+        > If there are no obvious problems then check with a voltmeter starting with power terminals coming into the machine.   
         > Exercise overloads while power is off – sometimes this helps when contacts and aux contacts are worn.  
         > Suspect loose wires at terminals or loose terminal blocks.  
 
@@ -260,13 +260,13 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
             > Check that encoders, sensors and limit switches are fastened securely.    
             > Dithering (erratic motion) is a sign of loose encoder.  
-            > If encoder is tight than suspect faulty encoder.  
+            > If encoder is tight then suspect faulty encoder.  
             > Dithering can also be caused by dirty photo eyes and intermittent sensors.  
 
             > Check that limit switches are not actually up against their limits.  
             > If a machine won’t move in either direction and nothing else seems to be wrong then consider the possibility that both in and out limit switches are activated at the same time.  
  
-            > Important! While taking proper safety precautions, follow the wires. Pull and wiggle connectors. Check that all electrical connections (Power and Signal) to sensors, limit switches, encoders, terminal blocks, PLCs, VFDs and motors are tight and secure. If strange behavior cannot be explained then check for lose electrical connections before giving up and saying I need to look into the PLC. Looking into the PLC will not likely expose lose intermittant electrical connections.  
+            > Important! While taking proper safety precautions, follow the wires. Pull and wiggle connectors. Check that all electrical connections (Power and Signal) to sensors, limit switches, encoders, terminal blocks, PLCs, VFDs and motors are tight and secure. If strange behavior cannot be explained then check for lose electrical connections before giving up and saying I need to look into the PLC. Looking into the PLC will not likely expose loose intermittent electrical connections.  
 
             > Check that input and output cards are seated securely.  
             > Check input and output lights on the PLC. Compare these against photos taken when the system is ready to run.   
