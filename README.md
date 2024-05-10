@@ -203,34 +203,23 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         1.  Where are the Estops and Safety Gates?  
             > Pull out E-Stops and ensure that all gates are closed.  
 
-        2.  Operate the control or switch if possible for desired behavior.  
+        2.  Has Power But Won't Start
+            > Operate the control or switch for the desired behavior.  
             > Check the lights on the PLC.  
-            > If no input on the PLC lights up then we have a problem with the switch circuit.  
-            > If no output lights then we have a logic problem – all conditions for activation have not been met.  
-            > It is also possible but not likely that no output light means a bad output card.   
-            > and likewise no input lights could mean a bad input card.  
-            > In the case of a bad output card it is more likely that we will see the light but there will be no change in voltage.  
-            
-# document complete to this point. More work tomorrow.
-  
-            > Where are the limit switches, photo eyes, reflectors, proxes,
-        > encoders, and other types of sensors? Clean these and check
-        > that they are secure, dry, unbroken, functioning, focused, in
-        > the correct position, obstructed or not as needed, not picking
-        > up unwanted reflections, not picking up or being blocked by
-        > intermittent obstructions caused by mechanical failures or
-        > lose parts nearby, actuated or not as needed, and that the
-        > target is painted as required or that reflectors are clean.
-        > Check that wiring is secure, connectors are seated, and
-        > terminal screws are tight. When replacing these, ensure that
-        > settings on the new are the same as settings on the old. Look
-        > for power lights and fault lights on PLCs, Power supplies,
-        > Communications, HMIs and Computer Consoles. Are all required
-        > interlocked machines online and are the connecting relays
-        > functioning? Turn power off and back on again if any kind of
-        > control issue is suspected and exercise all overloads while
-        > the machine is off. Check the ladder logic if possible with a
-        > Laptop PC to see what conditions are not being met.
+            > If no input on the PLC lights up when pushing the switch then we have a problem with the switch circuit.  
+            > If no output on the PLC lights up when pushing the switch then we have a logic problem – all conditions for activation have not been met.  
+            > Are all the interlocked machines required by the PLC logic online and are the connecting relays functioning?  
+            > Where are the limit switches, photo eyes, reflectors, proxes, encoders, and other types of sensors?  
+            > Clean these and check that they are secure, dry, unbroken, functioning, focused,
+            > in the correct position, obstructed or not as needed, not pickin up unwanted reflections,
+            > not picking up or being blocked by intermittent obstructions caused by mechanical failures or
+            > lose parts nearby, actuated or not as needed, and that the target is painted as required or that reflectors are clean.  
+            > Check that wiring is secure, connectors are seated, and terminal screws are tight.  
+            > When replacing sensors, ensure that settings on the new sensors are the same as settings on the old.  
+            > Look for power lights and fault lights on PLCs, Power supplies, Communications modules, HMIs and Computer Consoles.      
+            > Check the ladder logic if possible with a Laptop PC to see what conditions are not being met.   
+            > Suspect bad input or output cards on PLC.  
+            > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well. 
 
     7.  Fried components:
 
