@@ -179,7 +179,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 3.  Electrical issues: [Review safety talk here](https://github.com/johnshearing/ElectricalSafety/blob/main/README.md)
 
-
     1.  Basic Power issues:  
         > Does the machine have power?  
         > Is the machine plugged in?  
@@ -189,7 +188,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Exercise overloads while power is off – sometimes this helps when contacts and aux contacts are worn.  
         > Suspect loose wires at terminals or loose terminal blocks.  
 
-
     2.  Basic Heat issues:  
         > Are the electrical parts too hot?  
         > Are Motors, Wires, Connections, Fuses, Power supplies, the PLCs, or the VFDs too hot?  
@@ -198,12 +196,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Blow dust out of drives and heat exchangers.  
         > Tighten connections. Replace fuses.  
 
-    3.  Control issues:
+    3.  Control issues:  
 
-        1.  Where are the Estops and Safety Gates?  
-            > Pull out E-Stops and ensure that all gates are closed.  
-
-        2.  Has Power But Won't Start
+        1.  Has Power But Won't Start  
+            > Where are the Estops and Safety Gates?  
+            > Pull out E-Stops and ensure that all safety gates are closed.  
+            > Check the master relay which powers the system after all safety conditions have been met.  
             > Operate the control or switch for the desired behavior.  
             > Check the lights on the PLC.  
             > If no input on the PLC lights up when pushing the switch then we have a problem with the switch circuit.  
@@ -221,47 +219,32 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Suspect bad input or output cards on PLC.  
             > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well. 
 
-    7.  Fried components:
+        2.  Fried components:  
+            > Ask what devices are being energized at the moment your components are being fried?   
+            > Ladder logic and electrical schematics should be consulted.  
+            > Disconnect all those devices.  
+            > Next disconnect the components which are getting cooked and replace with dummy loads on each wire coming in.  
+            > Appropriately sized light bulbs and fuses are perfect for this.  
+            > Finally, energize the devices one at a time until fuses start blowing.  
+            > The blown fuses will lead you to the shorting component.  
 
-        1.  Ask what devices are being energized at the moment your
-            > components are being fried? Ladder logic and electrical
-            > schematics should be consulted.
+        3.  Shorted Motors:
 
-        2.  Disconnect all those devices.
+            1.  Short circuits in DC Motors: 
+                > Index motor and check all windings for resistance.  
+                > Then check between field windings and armature windings and then both of those to thermocouple and ground.
 
-        3.  Next disconnect the components which are getting cooked and
-            > replace with dummy loads on each wire coming in.
-            > Appropriately sized light bulbs and fuses are perfect for
-            > this.
-
-        4.  Finally, energize the devices one at a time until fuses
-            > start blowing. The blown fuses will lead you to the
-            > shorting component.
+            2.  Short circuits in AC motors:  
+                > Check for single phasing (voltage at T1, T2, and T3). Check for equal resistance between all three windings.  
+                > Keep in mind that winding resistance must be checked right at the motor with all other wires completely disconnected.  
+                > If the brake is included in the measurement then resistance will not appear to be the same on all the windings.  
+                > The same holds true when checking amperage.  
+                > If the brake is active and the wire being measured goes down stream to the break as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
 
+# document complete to this point. More work tomorrow
 
-    8.  Shorted Motors
-
-        1.  Short circuits in DC Motors: Index motor and check all
-            > windings for resistance. Then check between field windings
-            > and armature windings and then both of those to
-            > thermocouple and ground.
-
-        2.  Short circuits in AC motors: Check for single phasing
-            > (voltage at T1, T2, and T3). Check for equal resistance
-            > between all three windings. Keep in mind that winding
-            > resistance must be checked right at the motor with all
-            > other wires completely disconnected. If the brake is
-            > included in the measurement then resistance will not
-            > appear to be the same on all the windings. The same holds
-            > true when checking amperage. If the brake is active and
-            > the wire being measured goes down stream to the break as
-            > well as to the winding then it will appear as if amperage
-            > measurements on that winding are greater than on the other
-            > two.
-
-    9.  When machines move erratically, move uncommanded, stop
-        > uncommanded, won’t move, or move at a speed unexpected:
+        4.  When machines move erratically, move uncommanded, stop uncommanded, won’t move, or move at a speed unexpected:
 
         1.  Ensure that all the controls are set correctly.
 
@@ -340,7 +323,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 
 
-7.  If there is a momentary loss of power (just a second or less)
+5.  If there is a momentary loss of power (just a second or less)
     (usually 24 volt systems but sometimes 110 too.)
 
     1.  This is most likely a short circuit. This may seem odd if no
@@ -356,7 +339,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         disappears. Then it is a simple matter of running down the
         short.
 
-8.  When motors are not moving.
+6.  When motors are not moving.
 
     1.  Check if contactors are getting signal. If not see item 4 “If
         > not moving for lack of signal”.
