@@ -1,4 +1,4 @@
-# ControlTechniciansTroubleshootingCheckList
+# Control Technician's Troubleshooting Checklist
 Factory Electrician's/Control Technician's Troubleshooting Checklist  
 Machines may be different but they are for the most part made of the same components and perform logic.  
 So following this checklist when things go wrong should lead the technician to the source of problem even when the machines are unfamiliar.  
