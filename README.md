@@ -197,7 +197,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Tighten connections. Replace fuses.  
 
     3.  Control issues:  
-        > Be sure to make an [initial survey](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#ask-initial-survey) and then check for mechanical issues first.  
+        > Be sure to make an [initial survey](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#ask-initial-survey) and then check for [mechanical issues](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#mechanical-issues-most-issues-even-those-which-appear-to-be-electrical-turn-out-to-be-mechanical-so-lets-look-at-the-mechanical-first) first.  
         > Most times an issue that seems electrical will turn out to be some mechanical problem.  
 
         1.  Has Power But Won't Start  
