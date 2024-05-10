@@ -201,17 +201,20 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Most times an issue that seems electrical will turn out to be some mechanical problem.  
 
         1.  Has Power But Won't Start  
-            > Where are the Estops and Safety Gates?  
+            > Where are the Estops and Safety Gates?   
             > Pull out E-Stops and ensure that all safety gates are closed.  
+
             > Check the master relay which powers the system after all safety conditions have been met.  
+
             > Operate the control or switch for the desired behavior.  
             > Then check the lights on the PLC.  
             > If no input on the PLC lights up when pushing the start switch then we have a problem with the switch circuit.  
+
             > If no output on the PLC lights up when pushing the start switch then we have a logic problem – all conditions for activation have not been met.  
             > Are all other interlocked machines required by the PLC logic online and are the connecting relays functioning?  
             > Where are the limit switches, photo eyes, reflectors, proxes, encoders, and other types of sensors?  
             > Clean these and check that they are secure, dry, unbroken, functioning, focused,
-            > in the correct position, obstructed or not as needed, not pickin up unwanted reflections,
+            > in the correct position, obstructed or not as needed, not picking up unwanted reflections,
             > not picking up or being blocked by intermittent obstructions caused by mechanical failures or
             > lose parts nearby, actuated or not as needed, and that the target is painted as required or that reflectors are clean.  
             > Check that wiring is secure, connectors are seated, and terminal screws are tight.  
@@ -219,7 +222,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Look for power lights and fault lights on PLCs, Power supplies, Communications modules, HMIs and Computer Consoles.      
             > Check the ladder logic if possible with a Laptop PC to see what conditions are not being met.   
             > Suspect bad input or output cards on PLC.  
-            > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well. 
+            > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well.   
 
         2.  Fried components:  
             > Ask what devices are being energized at the moment your components are being fried?   
@@ -255,9 +258,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check if unwanted reflections are confusing photo eyes.  
             > Check for faulty or broken sensors or limit switches.  
 
-            > Check that encoders, sensors and limit switches are fastened securely.  
-            > Suspect faulty encoders.  
+            > Check that encoders, sensors and limit switches are fastened securely.    
             > Dithering (erratic motion) is a sign of loose encoder.  
+            > If encoder is tight than suspect faulty encoder.  
             > Dithering can also be caused by dirty photo eyes and intermittent sensors.  
 
             > Check that limit switches are not actually up against their limits.  
