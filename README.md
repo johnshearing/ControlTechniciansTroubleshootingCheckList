@@ -235,9 +235,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         3.  Shorted Motors:
 
-            1.  Short circuits in DC Motors: 
-                > Index motor and check all windings for resistance.  
-                > Then check between field windings and armature windings and then both of those to thermocouple and ground.
+            1.  Short circuits in DC Motors:   
+                > Check all rotor windings for shorts at the commutator.   
+                > Place one probe between each of the windings on the rotor and the other probe on the the stator winding(s).  
+                > Then test both of those to the thermocouple and to the ground.  
+                > All of these should be open circuits.  
 
             2.  Short circuits in AC motors:  
                 > Check for single phasing (voltage at T1, T2, and T3). Check for equal resistance between all three windings.  
@@ -285,42 +287,28 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
             > Check for proper voltages from power supplies and from source power.  
 
+        5.  If there is a momentary loss of power (for just a second or less):  
+            > Often when pushing a button or starting a process.  
+            > Usually 24 volt systems but sometimes 110 too.  
+            > This is most likely a short circuit.  
+            > This may seem odd if no fuse is blown and nothing is tripped out but this often how 24 volt systems short out.  
+            > If it happens when actuating a button then check the input circuit first by disconnecting the button circuit from the PLC and actuating the input with a jumper.  
+            > If the problem is still there then the problem is likely on one of the PLC output circuits although there is a small chance that an input activated right after the button is pushed could be the perpetrator.  
+            > To find which one, remove output wires on the PLC one at a time while replacing the previous until the problem disappears.  
+            > Then it is a simple matter of running down the short.  
 
-
-# Document is complete to this point. More work tomorrow
-
-5.  If there is a momentary loss of power (just a second or less)
-    (usually 24 volt systems but sometimes 110 too.)
-
-    1.  This is most likely a short circuit. This may seem odd if no
-        fuse is blown and nothing is tripped out but this often how 24
-        volt systems short out. If it happens when actuating a button
-        then check the input circuit first by disconnecting the button
-        circuit from the PLC and actuating the input with a jumper. If
-        the problem is still there then the problem is likely on one of
-        the PLC output circuits although there is a small chance that an
-        input activated right after the button is pushed could be the
-        perpetrator. To find which one, remove output wires on the PLC
-        one at a time while replacing the previous until the problem
-        disappears. Then it is a simple matter of running down the
-        short.
-
-6.  When motors are not moving.
-
-    1.  Check if contactors are getting signal. If not see item 4 “If
-        > not moving for lack of signal”.
-
-    2.  Check individual contacts on the contactor. There should be no
-        > voltage between the both ends of the contact terminals when
-        > the contactor is energized. There will be voltage between the
-        > terminals and ground of course. Alternatively, disconnect
-        > everything on the contactor but the coil and check between
-        > terminals of the contact for continuity when energized and
-        > when not. There should be continuity when energized and none
-        > when not energized. There should be a change in continuity on
-        > axillary contacts when changing from energized and not
-        > depending on whether or not the contact is normally open or
-        > normally closed.
+        6.  When motors are not moving:  
+            > Check that there is power voltage between all three supply side terminals of the contactor.  
+            > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
+            > If not see item 4 “If not moving for lack of signal”.  
+            
+            > Assuming you have signal:  
+            > Check individual contacts on the contactor with a voltmeter.  
+            > There should be no voltage difference between the supply side and the motor side contactor terminals for each leg when the contactor is energized.  
+            > There should be power voltage between all the power terminals and ground of course because the contact terminals are energized.  
+            > Alternatively, disconnect all wires on the contactor except for the coil wires and check for continuity between the supply side and the motor side contactor terminals for each leg of the contactor when the coil is energized and when not.   
+            > There should be continuity when energized and none when not energized.  
+            > There should be a change in continuity on axillary contacts when changing from energized and not depending on whether or not the contact is normally open or normally closed.  
 
     3.  If motors and actuators are moving in one direction but not at
         > all in the other, then suspect a problem in the limit switch
