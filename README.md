@@ -6,7 +6,7 @@ So following this checklist when things go wrong should lead the technician to t
 It may not be possible to diagnose a machine failure under lockout/tagout conditions.  
 If the machine is unfamiliar, be sure to work with machine operators that know how the machine moves and where dangerous potential energy is captive in the machine which might be relased during troubleshooting.  
 
-1.  Ask: Initial Survey.
+1.  #### Ask: Initial Survey.
 
     1.  Watch, Look, Listen, Smell, Ask, Think, Look at your notes,
         Think again. Don’t just start doing random things.
@@ -58,7 +58,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         are usually bad. Sometimes fuse holders provide a red light to
         indicate a blown fuse.
 
-2.  Mechanical issues: Most issues, even those which appear to be electrical turn out to be mechanical. So lets look at the mechanical first.
+2.  #### Mechanical issues: Most issues, even those which appear to be electrical turn out to be mechanical. So lets look at the mechanical first.
 
     1. Loose or broken mechanical connections:
         > Is the motor cool and does it move easily when controls are activated?  
@@ -197,16 +197,18 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Tighten connections. Replace fuses.  
 
     3.  Control issues:  
+        > Be sure to make an initial survey and then check for mechanical issues first.  
+        > Most times an issue that seems electrical will turn out to be some mechanical problem.  
 
         1.  Has Power But Won't Start  
             > Where are the Estops and Safety Gates?  
             > Pull out E-Stops and ensure that all safety gates are closed.  
             > Check the master relay which powers the system after all safety conditions have been met.  
             > Operate the control or switch for the desired behavior.  
-            > Check the lights on the PLC.  
-            > If no input on the PLC lights up when pushing the switch then we have a problem with the switch circuit.  
-            > If no output on the PLC lights up when pushing the switch then we have a logic problem – all conditions for activation have not been met.  
-            > Are all the interlocked machines required by the PLC logic online and are the connecting relays functioning?  
+            > Then check the lights on the PLC.  
+            > If no input on the PLC lights up when pushing the start switch then we have a problem with the switch circuit.  
+            > If no output on the PLC lights up when pushing the start switch then we have a logic problem – all conditions for activation have not been met.  
+            > Are all other interlocked machines required by the PLC logic online and are the connecting relays functioning?  
             > Where are the limit switches, photo eyes, reflectors, proxes, encoders, and other types of sensors?  
             > Clean these and check that they are secure, dry, unbroken, functioning, focused,
             > in the correct position, obstructed or not as needed, not pickin up unwanted reflections,
@@ -241,93 +243,54 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > The same holds true when checking amperage.  
                 > If the brake is active and the wire being measured goes down stream to the break as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
+        4.  When machines move erratically, move uncommanded, stop uncommanded, won’t move, or move at a speed unexpected:  
+            > Ensure that all the controls are set correctly.    
+            > Check for error messages or error lights at the PLCs.  
+            > Check for error messages or error lights at the VFDs.  
+            > Check for error messages at the HMIs.  
+            > It never hurts to just clear the machine, power down, and reset.  
 
-# document complete to this point. More work tomorrow
+            > Check that photo eyes and reflectors are clean.  
+            > Check that sensors, reflectors, limit switches are adjusted and or focused properly.  
+            > Check if unwanted reflections are confusing photo eyes.  
+            > Check for faulty or broken sensors or limit switches.  
 
-        4.  When machines move erratically, move uncommanded, stop uncommanded, won’t move, or move at a speed unexpected:
+            > Check that encoders, sensors and limit switches are fastened securely.  
+            > Suspect faulty encoders.  
+            > Dithering (erratic motion) is a sign of loose encoder.  
+            > Dithering can also be caused by dirty photo eyes and intermittent sensors.  
 
-        1.  Ensure that all the controls are set correctly.
+            > Check that limit switches are not actually up against their limits.  
+            > If a machine won’t move in either direction and nothing else seems to be wrong then consider the possibility that both in and out limit switches are activated at the same time.  
+ 
+            > Important! While taking proper safety precautions, follow the wires. Pull and wiggle connectors. Check that all electrical connections (Power and Signal) to sensors, limit switches, encoders, terminal blocks, PLCs, VFDs and motors are tight and secure. If strange behavior cannot be explained then check for lose electrical connections before giving up and saying I need to look into the PLC. Looking into the PLC will not likely expose lose intermittant electrical connections.  
 
-        2.  Clear the machine, power down, and reset.
+            > Check that input and output cards are seated securely.  
+            > Check input and output lights on the PLC. Compare these against photos taken when the system is ready to run.   
+            > If PLC inputs and outputs are bypassed using multiplexers then check the lights on the multiplexers.  
 
-        3.  Check for error messages or error lights at the PLCs.
+            > Check the ladder logic if possible with a Laptop PC or look over the ladder logic in the documentation.
 
-        4.  Check for error messages or error lights at the VFDs.
+            > Check the health of the motors:  
+            > Measure voltage, freq, power factor and amperage on all legs loaded and unloaded.  
+            > They should be equal.  
+            > Voltage, Amperage, and resistance measurements intended to determine the health of a motor must be made at the motor without any connections to brakes, contactor coils, load balancing devices etc.  
 
-        5.  Check for error messages at the HMIs.
+            > Check that connections to VFDs are secure and that the drive is functioning correctly.  
+            > Check input voltage and output voltage.  
+            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.  
 
-        6.  Check that photo eyes and reflectors are clean.
-
-        7.  Check that sensors, reflectors, limit switches and encoders
-            > are adjusted and or focused properly.
-
-        8.  Check if unwanted reflections are confusing photo eyes.
-
-        9.  Check for faulty or broken sensors or limit switches.
-
-        10. Check that encoders, sensors and limit switches are fastened
-            > securely.
-
-            1.  Dithering is a sign of loose encoder. Dithering can also
-                be caused by dirty photo eyes and intermittent sensors.
-
-        11. Check that limit switches are not actually up against their
-            > limits. If a machine won’t move in either direction and
-            > nothing else seems to be wrong then consider the
-            > possibility that both in and out limit switches are
-            > activated at the same time.
-
-        12. Important! Follow the wires. Pull and wiggle connectors.
-            > Check that all electrical connections (Power and Signal)
-            > to sensors, limit switches, encoders, terminal blocks,
-            > PLCs, VFDs and motors are tight and secure. If strange
-            > behavior cannot be explained then check for lose
-            > electrical connections before giving up and saying I need
-            > to look into the PLC. Looking into the PLC will not expose
-            > lose electrical connections.
-
-        13. Check sensor, limit switch, and encoder connections at the
-            > PLCs and VFDs.
-
-        14. Suspect faulty encoders.
-
-        15. Check that input and output cards are seated securely.
-
-        16. Check input and output lights on the PLC. Compare these
-            > against photos taken when the system is ready to run.
-
-        17. If PLC inputs and outputs are bypassed using multiplexers,
-            > then check the lights on the multiplexers.
-
-        18. Check the ladder logic if possible with a Laptop PC or look
-            > over the ladder logic in the documentation.
-
-        19. Check that wires to PLCs are secure.
-
-        20. Check the health of the motor. Measure voltage, freq, power
-            > factor and amperage on all legs loaded and unloaded. They
-            > should be equal. Voltage, Amperage, and resistance
-            > measurements intended to determine the health of a motor
-            > must be made at the motor without any connections to
-            > brakes, contactor coils, load balancing devices etc.
-
-        21. Check that connections to VFDs are secure and that the drive
-            > is functioning correctly. Check input voltage and output
-            > voltage. Use the meter’s low pass filter when measuring
-            > the output of a VFD.
-
-        22. Check for proper voltages from power supplies and from
-            > source power.
-
-        23. Suspect overheating hydraulics and bad seals.
+            > Check for proper voltages from power supplies and from source power.  
 
 
+
+# Document is complete to this point. More work tomorrow
 
 5.  If there is a momentary loss of power (just a second or less)
     (usually 24 volt systems but sometimes 110 too.)
 
     1.  This is most likely a short circuit. This may seem odd if no
-        fuse is blow and nothing is tripped out but this often how 24
+        fuse is blown and nothing is tripped out but this often how 24
         volt systems short out. If it happens when actuating a button
         then check the input circuit first by disconnecting the button
         circuit from the PLC and actuating the input with a jumper. If
