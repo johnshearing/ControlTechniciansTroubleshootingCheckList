@@ -298,6 +298,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Then it is a simple matter of running down the short.  
 
         6.  When motors are not moving:  
+            > If motor is powered by a VFD:
+            > Check that the VFD is powered.
+            > Check that the VFD is providing the correct voltage to the motor when pressing the start button on the machine.
+            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.
+            
+            > If motor power comes from a contactor:
             > Check that there is power voltage between all three supply side terminals of the contactor.  
             > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
             > If not see item 4 “If not moving for lack of signal”.  
@@ -336,74 +342,39 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             
             > Check that the overload is functioning:  
             > Disconnect the motor from the overload.  
-            > If the protection still trips then replace the protector.  
+            > If the protection still trips then replace the protector.   
             
             > If the overload does not trip when unloaded (when disconnected from the motor):  
             > Check for single phasing: Is the overload getting voltage on all three legs?  
             > Check L1, L2, and L3 at the overload.  
             > Check voltage between all three legs – voltages should be equal (all within 2% of the average).  
-            > If one of the legs is not getting voltage then there is a blown fuse up stream.
+            > If one of the legs is not getting voltage then there is a blown fuse up stream.  
+           
+            > If all is good at the overload then the problem is downstream towards the motor.  
+            > Check resistance on the three wires at the contactor going to the motor.  
+            > These are the same there wires you disconnected from the overload.  
+            > If there is an electric break on the motor then you will need to disconnect that before making this test.  
+            > The resistance should be equal between all three wires going to the motor.  
+            > If not, suspect opens or shorts on the motor windings or on the wires going to the motor.  
             
-# Document is complete to this point. More work tomorrow
+            > If a problem is detected from above then we need to determine if the problem is with the wires going to the motor from the contactor or if the problem is with the motor windings.  
+            > Testing the wires going to the motor for shorts:  
+            > Disconnect the three wires at the motor. They are already disconnected at the overload.  
+            > Now check resistance between the three wires. It should be an open circuit.  
+            > Then check the resistance to ground. This should also be an open circuit.  
+             
+            > If wires going from the overload to the motor don't have any shorts then we need to check that none of the wires are broken:  
+            > Join the three wires from the overload at the motor with a wire nut. Not the motor wires, but the wires going to the motor from the overload.  
+            > Check continuity between all three wires at the overload end of the wires.  
+            > This will identify which wire (if any) is broken.  
+            > Be sure to disconnect the wires at the motor when the test is done.  
+            
+            > If the wires have checked out good then we need to check the motor windings for shorts, opens, and unequal resistances between windings (AC) or across windings in the case of DC motors.  
+            > Also check that there is no short between the windings and the case or ground wires.  
+            > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
 
-
-            2.  If all is good at the overload then the problem is
-                downstream towards the motor.
-
-                1.  Check resistance on the three wires going to the
-                    motor.
-
-                2.  These are the same there wires you disconnected from
-                    the overload.
-
-                3.  If there is an electric break on the motor then you
-                    will need to disconnect that before making this
-                    test.
-
-                4.  The resistance should be equal between all three
-                    legs going to the motor.
-
-                5.  If not, suspect opens or shorts on the motor
-                    windings or on the wires going to the motor.
-
-                6.  Disconnect the three wires at the motor. They are
-                    already disconnected at the overload.
-
-                7.  Now check resistance between the three wires. It
-                    should be an open circuit.
-
-                8.  Then check the resistance to ground. This should
-                    also be an open circuit.
-
-                9.  If all is good so far then join the three wires at
-                    the motor. Not the motor wires, but the wires going
-                    to the motor from the overload.
-
-                10. Check continuity between all three wires at the
-                    overload end of the wires. This will identify which
-                    wire is broken, if any. Be sure to disconnect the
-                    wires at the motor when the test is done.
-
-            3.  If all is good then we need to check the motor
-                windings or actuator windings for shorts, opens, and
-                unequal resistances between windings (AC) or across
-                windings in the case of DC motors.
-
-            4.  Also check that there is no short between the windings
-                and the case or ground wires.
-
-            5.  Remember to completely disconnect the motor from the
-                rest of the circuit including the brake circuit, if any,
-                and measure right at the windings
-
-            6.  Check that the load is not jammed and that it moves
-                freely.
-
-            7.  Check if not moving for lack of power from the VFD:
-
-            8.  When not moving for lack of signal:
-
-                1.  Ensure that controls are set right
+            11.  When not moving for lack of signal:  
+                 >Ensure that controls are set right  
 
                 2.  If no shorts are apparent and the resistances on all
                     three windings are equal, brushes if any are good,
