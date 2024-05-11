@@ -309,7 +309,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when perssing the start button.  
             > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)
             >
-            > If VFD is getting signal and seems to be working, skip to the section []()
+            > If VFD is getting signal and seems to be working, skip to the section [If motors and actuators...](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#if-motors-and-actuators-are-moving-in-one-direction-but-not-at-all-in-the-other)
             >
             > 
             > If motor power comes from a contactor:  
