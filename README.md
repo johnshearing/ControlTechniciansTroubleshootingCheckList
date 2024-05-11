@@ -373,7 +373,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Also check that there is no short between the windings and the case or ground wires.  
             > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
 
-       11.  When not moving for lack of signal:  
+       11.  #### When not moving for lack of signal:  
                  >Ensure that controls are set right  
 
                 2.  If no shorts are apparent and the resistances on all
