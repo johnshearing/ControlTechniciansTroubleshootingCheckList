@@ -307,9 +307,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > There should be equal voltages between all three terminals going to the motor.
             
             > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when perssing the start button.  
-            > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)  
+            > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)
+            >
+            > If VFD is getting signal and seems to be working, skip to the section []()
+            >
             > 
-            
             > If motor power comes from a contactor:  
             > Check that there is power voltage between all three supply side terminals of the contactor.  
             > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
@@ -323,7 +325,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > There should be continuity when energized and none when not energized.  
             > There should be a change in continuity on axillary contacts when changing from energized and not depending on whether or not the contact is normally open or normally closed.  
 
-       7.  If motors and actuators are moving in one direction but not at all in the other:  
+       7.  #### If motors and actuators are moving in one direction but not at all in the other:  
            > Suspect a problem in the limit switch circuit or perhaps machine is up against a limit switch and should not be moved.  
            > Problems with a limit switch are very likely if a machine part has become loose or moved out of alignment.  
            > Also check that aux contactors on reversing contactors and overloads as well are working.  
