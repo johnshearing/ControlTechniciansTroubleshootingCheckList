@@ -310,30 +310,24 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > There should be continuity when energized and none when not energized.  
             > There should be a change in continuity on axillary contacts when changing from energized and not depending on whether or not the contact is normally open or normally closed.  
 
-    3.  If motors and actuators are moving in one direction but not at
-        > all in the other, then suspect a problem in the limit switch
-        > circuit or perhaps machine is up against a limit switch and
-        > should not be moved. Problems with a limit switch are very
-        > likely if a machine part has become loose or moved out of
-        > alignment. Also check that aux contactors on reversing
-        > contactors and overloads as well are working.
+       7.  If motors and actuators are moving in one direction but not at all in the other:  
+           > Suspect a problem in the limit switch circuit or perhaps machine is up against a limit switch and should not be moved.  
+           > Problems with a limit switch are very likely if a machine part has become loose or moved out of alignment.  
+           > Also check that aux contactors on reversing contactors and overloads as well are working.  
 
-    4.  If there is at least some movement in both directions then more
-        > than likely a jam. Also consider the possibility that a set
-        > screw, key, or pin is missing between a gear and shaft. This
-        > would explain some movement until power transmission is
-        > required.
+       8.  If there is at least some movement in both directions:  
+           > More than likely a jam.  
+           > Also consider the possibility that a set screw, key, or pin is missing between a gear and shaft.  
+           > This would explain some movement until power transmission is required.  
 
-    5.  Check brushes if applicable that they are seated properly and
-        > that they are not worn out.
+       9.  Check brushes if applicable that they are seated properly and that they are not worn out.
+  
+       10.  If breakers and overloads are tripping, if fuses are blowing:  
+            > Reset or replace protector and try again.  
+            > If fuse does not blow right away, then observe the motor and the load.  
+            > See if anything is jammed or binding.  
 
-    6.  If breakers and overloads are tripping, if fuses are blowing:
-
-        1.  Reset or replace protector and try again. If fuse does not
-            blow right away, then observe the motor and the load. See if
-            anything is jammed or binding.
-
-        2.  If protector keeps tripping which prevents observation of
+        11.  If protector keeps tripping which prevents observation of
             motor function then be sure the breaker in question
             corresponds with the malfunctioning motor. In other words,
             it is possible that the breaker you are resetting is
