@@ -203,8 +203,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         1.  Has Power But Won't Start  
             > Where are the Estops and Safety Gates?   
             > Pull out E-Stops and ensure that all safety gates are closed.  
+            > Look at the lights on the safety relay(s) to be sure the safety circuit is in the (OK Ready To Run) state.   
+            > Measure the voltage on the safety circuit and on the safety relay(s) to be sure the safety circuit is in the (OK Ready To Run) state.  
 
             > Check the master relay which powers the system after all safety conditions have been met.  
+            > Is the master relay getting signal from the safety relay(s)?  
+            > Are all the contacts on the master relay closing?  
 
             > Operate the control or switch for the desired behavior.  
             > Then check the lights on the PLC.  
@@ -301,20 +305,26 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > If motor has an electricly powered brake:  
             > Be sure the brake is releasing when the motor in energized.  
             
-            >If motor is powered by a VFD:  
-            > Check for error messages on the VFD  
-            > Check that there is power to the VFD
+            > If motor is powered by a VFD:  
+            > Check for error messages on the VFD    
+            > Check that there is power to the VFD  
             > There should be equal voltages between all three supply side terminals.  
-            > Check that the VFD is providing the correct voltage to the motor when pressing the start button on the machine.  
-            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.
+            > Check that the safety circuit on the drive is in the (OK Ready To Run) state.  
+            > Run the drive manually using the controls on the drive or put a start signal on the drive.  
+            > Check that the VFD is providing the correct voltage to the motor between all three legs when pressing the start button on the machine.  
+            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.  
             > There should be equal voltages between all three terminals going to the motor.  
+            > Check if motor runs when bypassing the VFD and wiring to a contactor instead.  
+            > Swap out the drive with one identical and loaded with the same parameters.  
+
+            > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when pressing the start button.  
             
-            > Check if motor runs when bypassing the VFD.  
-            
-            > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when perssing the start button.  
-            > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)
+            > If no signal:  
+            > Broken signal wire? Check for signal at the source (relay, PLC output, eithernet signal)  
+            > Remote into the PLC to see if the drive is getting signal.  
+            > skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal)  
             >
-            > If VFD is getting signal and seems to be working, skip to the section [If motors and actuators...](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#if-motors-and-actuators-are-moving-in-one-direction-but-not-at-all-in-the-other)
+            > If VFD is getting signal and seems to be working, skip to the section [If motors and actuators...](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#if-motors-and-actuators-are-moving-in-one-direction-but-not-at-all-in-the-other)  
             >
             > 
             > If motor power comes from a contactor:  
@@ -401,15 +411,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
 
        10.  #### When not moving for lack of signal:  
-
-
-                11. Check if signal is coming into the drive:
-
-                12. or put a start signal on the drive.
-
-                13. Run the drive manually
-
-                14. or just swap out the drive.
 
                 16. Call the manufacturer
 
