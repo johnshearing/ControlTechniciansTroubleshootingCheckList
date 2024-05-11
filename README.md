@@ -248,7 +248,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > The same holds true when checking amperage.  
                 > If the brake is active and the wire being measured goes down stream to the break as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
-        4.  When machines move erratically, move uncommanded, stop uncommanded, won’t move, or move at a speed unexpected:  
+        4.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected or lack a starting signal:  
             > Ensure that all the controls are set correctly.    
             > Check for error messages or error lights at the PLCs.  
             > Check for error messages or error lights at the VFDs.  
@@ -298,13 +298,18 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Then it is a simple matter of running down the short.  
 
         6.  When motors are not moving:  
-            > If motor is powered by a VFD:  
+            > If motor has an electricly powered brake:  
+            > Be sure the brake is releasing when the motor in energized.  
+            
+            >If motor is powered by a VFD:  
             > Check for error messages on the VFD  
             > Check that there is power to the VFD
             > There should be equal voltages between all three supply side terminals.  
             > Check that the VFD is providing the correct voltage to the motor when pressing the start button on the machine.  
             > Use the meter’s low pass filter (if available) when measuring the output of a VFD.
-            > There should be equal voltages between all three terminals going to the motor.
+            > There should be equal voltages between all three terminals going to the motor.  
+            
+            > Check if motor runs when bypassing the VFD.  
             
             > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when perssing the start button.  
             > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)
@@ -337,89 +342,66 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
        9.  Check brushes if applicable that they are seated properly and that they are not worn out.
   
-       10.  If overloads are tripping, if fuses are blowing:  
+       10.  If overloads or VFDs are tripping, if fuses are blowing:  
             > Reset or replace protector and try again.  
             > If protection does not trip right away, then observe the motor and the load.  
             > See if anything is jammed or binding.  
+            > Check for phase imbalance while running (max 2% voltage deviation from average and max 10% current deviation).  
+            > Check power for harmonics (crest factor should be 1.4).  
+            > Cables from VFDs to motors should be as short as possible in order to reduce harmonics.  
             
             > Be sure the protector in question corresponds with the malfunctioning motor:    
-            > It is possible that the breaker you are resetting is tripping on a completely different circuit and has nothing to do with the motor you are working on.  
-            > So check continuity from contactor to motor if there is doubt about which motor a contactor is controlling.    
-            > Here is how: Join the ends of two power wires at the motor with a wire nut or jumper so that checking continuity can be accomplished right at the panel.   
-            > Or use a wire tracer.  
-            > Turn off all power when making this test for safety and to avoid false continuity readings caused by phantom voltage.  
-            
-            > Check that the overload is functioning:  
-            > Disconnect the motor from the overload.  
-            > If the protection still trips then replace the protector.   
+            > It is possible, due to mislabeling or other confusion, that the protector you are resetting has nothing to do with the motor you are working on.  
+            > So check continuity on the wires going from protector to motor if there is doubt about which motor a protector is controlling.    
+            > Here is how: Turn off all power (lockout/tagout) when making this test for safety and to avoid false continuity readings caused by phantom voltage.  
+            > Disconnect wires from the motor in question.  
+            > Join the ends of the three power wires coming to the motor from the protector at the motor with a wire nut so that checking continuity can be accomplished right at the protector.  
+            > There should be continuity between all three wires at the protector when the wires are joined at the motor and there should be no continuity between the wires when the or wire nut is removed.  
+            > In this way you are sure which motor the protector is connected to.  
+            > Replace the wires at the motor exactly as they were.  
+            > Do not replace the wires at the protector yet.  
+ 
+            > Check that the protector is functioning:  
+            > With the protector still disconnected from the motor, press the start button.  
+            > If the protection still trips while unloaded then replace the protector.   
             
             > If the overload does not trip when unloaded (when disconnected from the motor):  
-            > Check for single phasing: Is the overload getting voltage on all three legs?  
-            > Check L1, L2, and L3 at the overload.  
-            > Check voltage between all three legs – voltages should be equal (all within 2% of the average).  
-            > If one of the legs is not getting voltage then there is a blown fuse up stream.  
+            > Check for single phasing: Is the protector providing voltage to the motor on all three legs?  
+            > Check voltage between outputs T1, T2, and T3 at the protector.  
+            > Voltages should be equal (all within 2% of the average).  
+            > If one of the legs is not getting voltage then very likely there is a blown fuse up stream.  
            
-            > If all is good at the overload then the problem is downstream towards the motor.  
-            > Check resistance on the three wires at the contactor going to the motor.  
-            > These are the same there wires you disconnected from the overload.  
-            > If there is an electric break on the motor then you will need to disconnect that before making this test.  
+            > If all is good at the protector then the problem is downstream towards the motor.  
+            > Check resistance between the three wires at the protector going to the motor.  
+            > These wires should all be connected together through the windings of the motor.  
+            > These are the same there wires you disconnected from the protector.  
+            > If there is an electric break on the motor then you will need to disconnect that break from the motor windings before making this test.  
             > The resistance should be equal between all three wires going to the motor.  
             > If not, suspect opens or shorts on the motor windings or on the wires going to the motor.  
-            
-            > If a problem is detected from above then we need to determine if the problem is with the wires going to the motor from the contactor or if the problem is with the motor windings.  
+
+            > If a problem is detected from above then we need to determine if the problem is with the wires going to the motor from the protector or if the problem is with the motor windings.  
             > Testing the wires going to the motor for shorts:  
-            > Disconnect the three wires at the motor. They are already disconnected at the overload.  
+            > Disconnect the three wires at the motor. They are already disconnected at the protector.  
             > Now check resistance between the three wires. It should be an open circuit.  
-            > Then check the resistance to ground. This should also be an open circuit.  
+            > Then check the resistance between each of the wires and ground. This should also be an open circuit.  
              
-            > If wires going from the overload to the motor don't have any shorts then we need to check that none of the wires are broken:  
-            > Join the three wires from the overload at the motor with a wire nut. Not the motor wires, but the wires going to the motor from the overload.  
-            > Check continuity between all three wires at the overload end of the wires.  
+            > If wires going from the protector to the motor don't have any shorts then we need to check that none of the wires are broken:  
+            > Join the three wires from the protector at the motor with a wire nut. Not the motor wires, but the wires going to the motor from the protector.  
+            > Check continuity between all three wires at the protector end of the wires.  
             > This will identify which wire (if any) is broken.  
             > Be sure to disconnect the wires at the motor when the test is done.  
             
-            > If the wires have checked out good then we need to check the motor windings for shorts, opens, and unequal resistances between windings (AC) or across windings in the case of DC motors.  
+            > If the wires from the protector to the motor have checked out good then we need to check the motor windings for shorts, opens, and unequal resistances between windings (AC) or across windings in the case of DC motors.  
             > Also check that there is no short between the windings and the case or ground wires.  
             > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
+            
+            > If there are no conclusive results and the problem can not be found then maybe these are failing under load only in which case our previous test will not find the problem.  
+            > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
 
-       11.  #### When not moving for lack of signal:  
-                 >Ensure that controls are set right  
 
-                2.  If no shorts are apparent and the resistances on all
-                    three windings are equal, brushes if any are good,
-                    and all phases are at equal voltage, then:
 
-                3.  Check VFD, if any, by jumping it out and wiring
-                    directly to the motor.
+       10.  #### When not moving for lack of signal:  
 
-                4.  Finally, replace motor or actuator and replace the
-                    circuit breaker or overload as well and try again
-                    because these may be failing under load only in
-                    which case our previous test will not find the
-                    problem.
-
-                5.  If the motor still trips, check power for harmonics
-                    (crest factor should be 1.4). Check for phase
-                    imbalance (max 2% voltage deviation from average and
-                    max 10% current deviation).
-
-                6.  Remember to reset all breakers after fixing shorted
-                    wires. Also remember that some external disconnects
-                    are overloads as well as switches. So if conveyor
-                    belts are not moving then suspect that overloads in
-                    the red boxes have tripped or have been kicked.
-
-                7.  Voltage should be within 2% of the average between
-                    any two legs. Amperage between any of the legs while
-                    running should measure between 10% of the average.
-
-                8.  Also suspect faulty circuit breakers all the way
-                    back at the panel.
-
-                9.  Suspect individual fuses for single phasing.
-
-                10. Check VFD is receiving power on all 3 legs but is
-                    not putting power out to motor.
 
                 11. Check if signal is coming into the drive:
 
@@ -429,17 +411,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
                 14. or just swap out the drive.
 
-                15. Operate the control or switch if possible. Check the
-                    lights on the PLC. If no input lights then we have a
-                    problem with the switch circuit. If no output lights
-                    then we have a logic problem – all conditions for
-                    activation have not been met. Check the ladder
-                    logic. It is also possible but not likely that no
-                    output means a bad output card and likewise no input
-                    lights could mean a bad input card. In the case of a
-                    bad output card it is more likely that we will see
-                    the light but there will be no change in voltage.
-
                 16. Call the manufacturer
 
                 17. Check the manual for troubleshooting tips and look
@@ -447,22 +418,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
                 18. Check for proper voltages from power supplies and
                     from source power.
-
-                19. Check that connections to VFDs are secure and that
-                    the drive is functioning correctly. Measure voltage,
-                    freq, and amperage on all legs. They should be
-                    equal.
-
-                20. Check that wires to PLCs are secure.
-
-                21. Check the ladder logic if possible with a Laptop PC.
-
-                22. If PLC inputs and outputs are bypassed using
-                    multiplexers, then check the lights on the
-                    multiplexers.
-
-                23. Check input and output lights on the PLC. Compare
-                    these against the schematics.
 
                 24. Check that input and output cards are seated
                     securely.
@@ -477,17 +432,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     sensor will appear to function but no signal will
                     arrive at the PLC or relay.
 
-                28. Follow the wires. Check that connections to sensors,
-                    limit switches, encoders and relays are secure.
-
-                29. Check that encoders, sensors and limit switches are
-                    fastened securely.
-
-                30. Check for faulty sensors, limit switches, faulty
-                    relays and faulty contactors. Remember that even if
-                    a relay or contactor seems to be operating,
-                    individual contact may still be failing.
-
                 31. When changing sensors, be sure to note original
                     position. Leave stop nuts in place so as to know the
                     correct placement of new sensor. Take photos, mark
@@ -495,57 +439,23 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                     devices. If possible, remove and replace only one
                     wire at a time.
 
-                32. Replace or Jump out faulty sensors, limit switches
-                    and relays at the PLC at the multiplexer or in the
-                    ladder logic on a PC. This will make the motor run
-                    continuously.
-
                 33. Are sensors or switches hot (temperature)? Water
                     inside?
-
-                34. Check if unwanted reflections are confusing photo
-                    eyes.
-
-                35. Check that sensors, reflectors, limit switches and
-                    encoders are adjusted and fastened securely and
-                    aligned properly. Suspect limit switches and proxes
-                    if machine parts have become loose or misaligned.
-
-                36. Check that photo eyes are unobstructed, especially
-                    entering the prefeeder.
-
-                37. Check that photo eyes and reflectors are clean.
-
-                38. Check for error messages or error lights at the VFDs
-                    (Think Prime2 DieCut cabinet and DieCut1 next door).
-
-                39. Check error messages at the control panels. Pay
-                    special attention to the messages generated first
-                    because these could be the cause of later faults.
-
-                40. Check for error messages or error lights at the PLCs
 
                 41. Make sure all switches are in the operational
                     positions.
 
-                42. Pull out all E-Stops.
 
-                43. Close all safety gates and guards.
 
-                44. Make sure air is on that hydraulic pumps are
-                    running, that there is oil in the tank, or that
-                    there is steam pressure.
 
-                45. Make sure that all other interlocked machines are
-                    powered on and sending an ok signal to faulting
-                    machine. (Think ice cube relay on prefeeder to
-                    Prime3. Think red boxes under conveyor.)
 
-                46. Clear the machine, power down, exercise overloads
-                    (especially those with aux contacts) and restart.
 
-                47. Check that Contactor or solenoid is not getting
-                    signal.
+
+
+
+
+
+
 
 
 10.  Glue Systems:
