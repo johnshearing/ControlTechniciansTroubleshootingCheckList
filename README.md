@@ -322,39 +322,30 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
        9.  Check brushes if applicable that they are seated properly and that they are not worn out.
   
-       10.  If breakers and overloads are tripping, if fuses are blowing:  
+       10.  If overloads are tripping, if fuses are blowing:  
             > Reset or replace protector and try again.  
-            > If fuse does not blow right away, then observe the motor and the load.  
+            > If protection does not trip right away, then observe the motor and the load.  
             > See if anything is jammed or binding.  
+            
+            > Be sure the protector in question corresponds with the malfunctioning motor:    
+            > In other words, it is possible that the breaker you are resetting is tripping on a completely different circuit and has nothing to do with the motor you are working on.  
+            > So check continuity from breaker to motor if there is doubt.    
+            > Here is how: Join the ends of two power wires at the motor with a wire nut or jumper so that checking continuity can be accomplished right at the panel.   
+            > Or use a wire tracer.  
+            > Turn off all power when making this test for safety and to avoid false continuity readings caused by phantom voltage.  
+            
+            > Check that the overload is functioning:  
+            > Disconnect the motor from the overload.  
+            > If the protection still trips then replace the protector.  
+            
+            > If the overload does not trip when unloaded (when disconnected from the motor):  
+            > Check for single phasing: Is the overload getting voltage on all three legs?  
+            > Check L1, L2, and L3 at the overload.  
+            > Check voltage between all three legs – voltages should be equal (all within 2% of the average).  
+            > If one of the legs is not getting voltage then there is a blown fuse up stream.
+            
+# Document is complete to this point. More work tomorrow
 
-        11.  If protector keeps tripping which prevents observation of
-            motor function then be sure the breaker in question
-            corresponds with the malfunctioning motor. In other words,
-            it is possible that the breaker you are resetting is
-            tripping on a completely different circuit when the machine
-            is started and has nothing to do with the motor you are
-            working on. So check continuity from breaker to motor if
-            there is doubt or use a wire tracer. Remember Ray’s trick of
-            joining the ends of two wires with a wire nut so that
-            checking continuity can be accomplished right at the panel
-            or at the motor. Turn off all power to avoid false
-            continuity readings caused by phantom voltage.
-
-        3.  Check that the overload is functioning.
-
-            1.  Disconnect the motor from the overload. If the
-                protection still trips or blows then replace the
-                protector.
-
-        4.  If the overload does not trip when unloaded (disconnected
-            from the motor):
-
-            1.  Check for single phasing: Is the overload getting
-                voltage on all three legs? Check L1, L2, and L3 at the
-                overload. Check voltage between all three legs –
-                voltages should be equal (all within 2% of the average).
-                If one of the legs is not getting voltage then there is
-                a blown fuse up stream.
 
             2.  If all is good at the overload then the problem is
                 downstream towards the motor.
