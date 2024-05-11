@@ -299,14 +299,21 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
         6.  When motors are not moving:  
             > If motor is powered by a VFD:  
-            > Check that the VFD is powered.  
+            > Check for error messages on the VFD  
+            > Check that there is power to the VFD
+            > There should be equal voltages between all three supply side terminals.  
             > Check that the VFD is providing the correct voltage to the motor when pressing the start button on the machine.  
-            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.  
+            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.
+            > There should be equal voltages between all three terminals going to the motor.
+            
+            > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when perssing the start button.  
+            > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)  
+            > 
             
             > If motor power comes from a contactor:  
             > Check that there is power voltage between all three supply side terminals of the contactor.  
             > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
-            > If not, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)  
+            > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)  
             
             > Assuming you have signal:  
             > Check individual contacts on the contactor with a voltmeter.  
