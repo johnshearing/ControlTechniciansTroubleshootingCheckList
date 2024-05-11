@@ -298,12 +298,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Then it is a simple matter of running down the short.  
 
         6.  When motors are not moving:  
-            > If motor is powered by a VFD:
-            > Check that the VFD is powered.
-            > Check that the VFD is providing the correct voltage to the motor when pressing the start button on the machine.
-            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.
+            > If motor is powered by a VFD:  
+            > Check that the VFD is powered.  
+            > Check that the VFD is providing the correct voltage to the motor when pressing the start button on the machine.  
+            > Use the meter’s low pass filter (if available) when measuring the output of a VFD.  
             
-            > If motor power comes from a contactor:
+            > If motor power comes from a contactor:  
             > Check that there is power voltage between all three supply side terminals of the contactor.  
             > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
             > If not, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)  
