@@ -334,8 +334,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > See if anything is jammed or binding.  
             
             > Be sure the protector in question corresponds with the malfunctioning motor:    
-            > In other words, it is possible that the breaker you are resetting is tripping on a completely different circuit and has nothing to do with the motor you are working on.  
-            > So check continuity from breaker to motor if there is doubt.    
+            > It is possible that the breaker you are resetting is tripping on a completely different circuit and has nothing to do with the motor you are working on.  
+            > So check continuity from contactor to motor if there is doubt about which motor a contactor is controlling.    
             > Here is how: Join the ends of two power wires at the motor with a wire nut or jumper so that checking continuity can be accomplished right at the panel.   
             > Or use a wire tracer.  
             > Turn off all power when making this test for safety and to avoid false continuity readings caused by phantom voltage.  
@@ -373,7 +373,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Also check that there is no short between the windings and the case or ground wires.  
             > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
 
-            11.  When not moving for lack of signal:  
+       11.  When not moving for lack of signal:  
                  >Ensure that controls are set right  
 
                 2.  If no shorts are apparent and the resistances on all
