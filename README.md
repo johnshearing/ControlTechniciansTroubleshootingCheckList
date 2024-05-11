@@ -248,7 +248,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > The same holds true when checking amperage.  
                 > If the brake is active and the wire being measured goes down stream to the break as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
-        4.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected or lack a starting signal:  
+        4.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
             > Ensure that all the controls are set correctly.    
             > Check for error messages or error lights at the PLCs.  
             > Check for error messages or error lights at the VFDs.  
