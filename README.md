@@ -48,7 +48,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         show errors?
 
     13. Are there any error messages at the control panels, computer
-        consoles, or HMI screens? Pay special attention to the error
+        consoles, HMI screens, or VFDs? Pay special attention to the error
         messages which were generated first on the list because these
         may trigger the latter error conditions. Remember that not all
         error messages are representative of the conditions that trigger
@@ -200,7 +200,16 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
         > Be sure to make an [initial survey](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#ask-initial-survey) and then check for [mechanical issues](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#mechanical-issues-most-issues-even-those-which-appear-to-be-electrical-turn-out-to-be-mechanical-so-lets-look-at-the-mechanical-first) first.  
         > Most times an issue that seems electrical will turn out to be some mechanical problem.  
 
-        1.  Has Power But Won't Start  
+        1.  Check First:
+            > Ensure that all the controls are set correctly.  
+            > Make sure all switches are in the operational positions.  
+            > Check for error messages or error lights at the PLCs.  
+            > Check for error messages or error lights at the VFDs.  
+            > Check for error messages at the HMIs.
+            > Check for error messages at the computer console.  
+            > It never hurts to just clear the machine, power down, and reset.
+                   
+        2.  Has Power But Won't Start  
             > Where are the Estops and Safety Gates?   
             > Pull out E-Stops and ensure that all safety gates are closed.  
             > Look at the lights on the safety relay(s) to be sure the safety circuit is in the (OK Ready To Run) state.   
@@ -228,16 +237,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Suspect bad input or output cards on PLC.  
             > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well.   
 
-
-
-        2.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
-            > Ensure that all the controls are set correctly.  
-            > Make sure all switches are in the operational positions.  
-            > Check for error messages or error lights at the PLCs.  
-            > Check for error messages or error lights at the VFDs.  
-            > Check for error messages at the HMIs.  
-            > It never hurts to just clear the machine, power down, and reset.  
-
+        3.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
             > Check that photo eyes and reflectors are clean.  
             > Check that sensors, reflectors, limit switches are adjusted and or focused properly.  
             > Check if unwanted reflections are confusing photo eyes.  
@@ -293,7 +293,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             
             > Call the manufacturer  
 
-        3.  Fried components:  
+        4.  Fried components:  
             > Ask what devices are being energized at the moment your components are being fried?   
             > Ladder logic and electrical schematics should be consulted.  
             > Disconnect all those devices.  
@@ -302,7 +302,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Finally, energize the devices one at a time until fuses start blowing.  
             > The blown fuses will lead you to the shorting component.  
 
-        4.  Shorted Motors:
+        5.  Shorted Motors:
 
             1.  Short circuits in DC Motors:   
                 > Check all rotor windings for shorts at the commutator.   
@@ -318,7 +318,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > If the brake is active and the wire being measured goes down stream to the brake as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
 
-        5.  If there is a momentary loss of power (for just a second or less):  
+        6.  If there is a momentary loss of power (for just a second or less):  
             > Often when pushing a button or starting a process.  
             > Usually 24 volt systems but sometimes 110 too.  
             > This is most likely a short circuit.  
@@ -328,7 +328,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > To find which one, remove output wires on the PLC one at a time while replacing the previous until the problem disappears.  
             > Then it is a simple matter of running down the short.  
 
-        6.  When motors are not moving:  
+        7.  When motors are not moving:  
             > If motor has an electrically powered brake:  
             > Be sure the brake is releasing when the motor is energized.  
             
@@ -367,7 +367,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > There should be continuity when energized and none when not energized.  
             > There should be a change in continuity on axillary contacts when changing from energized and not depending on whether or not the contact is normally open or normally closed.  
 
-       7.  #### If motors and actuators are moving in one direction but not at all in the other:  
+       8.  #### If motors and actuators are moving in one direction but not at all in the other:  
            > Suspect a problem in the limit switch circuit or perhaps machine is up against a limit switch and should not be moved.  
            > Problems with a limit switch are very likely if a machine part has become loose or moved out of alignment.  
            > Also check that aux contactors on reversing contactors and overloads as well are working.  
@@ -377,9 +377,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
            > Also consider the possibility that a set screw, key, or pin is missing between a gear and shaft.  
            > This would explain some movement until power transmission is required.  
 
-       9.  Check brushes if applicable that they are seated properly and that they are not worn out.
+       10.  Check brushes if applicable that they are seated properly and that they are not worn out.
   
-       10.  If overloads or VFDs are tripping, if fuses are blowing:  
+       11.  If overloads or VFDs are tripping, if fuses are blowing:  
             > Reset or replace protector and try again.  
             > If protection does not trip right away, then observe the motor and the load.  
             > See if anything is jammed or binding.  
