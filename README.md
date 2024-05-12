@@ -436,28 +436,21 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
              > If there are no conclusive results and the problem can not be found then maybe these are failing under load only in which case our previous test will not find the problem.  
              > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
 
-11.  Jumping out NPN and PNP Sensors
+4.  Jumping out NPN and PNP Sensors at the PLC:
+    > Pull the sensor wires out of the cabinet after marking them and jump the PLC input Hi or Low as required.  
+     
+    > To say it in greater detail:  
+    > Brown is usually Positive,  
+    > Blue is usually Negative,  
+    > White is usually Signal for NPN,  
+    > Black is usually Signal for PNP.  
+    
+    > For PNP sensors (sourcing sensors), install a jumper from where the black wire of the sensor was connected (the PLC input) to where the Positive Brown wire was connected so as to source voltage to the input.  
+    > The PLC input in this case is obviously a sinking input because it provides a path with a load for the sourced voltage from the sensor to drop across as it works its way to the negative side of the power supply.  
+    > Sinking PLC inputs are normally low and get pulled high when activated.   
 
-    1.  Pull the sensor wires out of the cabinet after marking them and
-        jump the PLC input Hi or Low as required.
-
-    2.  To say it in greater detail: Brown is usually Positive, Blue is
-        usually Negative, White is usually Signal for NPN, Black is
-        usually Signal for PNP. So for PNP sensors, install a jumper
-        from where the black wire of the sensor was connected (the PLC
-        input) to where the Positive Brown wire was connected so as to
-        source voltage to the input. The input in this case is obviously
-        a sinking input because it provides a path with a load for the
-        sourced voltage from the sensor to drop across as it works its
-        way to the negative side of the power supply.
-
-    3.  So for NPN sensors, install a jumper from where the white wire
-        of the sensor was connected (the PLC input) to where the
-        Negative Blue wire was connected so as to sink voltage from the
-        input. The input in this case is obviously a sourcing input
-        because it provides a voltage with a load for said voltage to
-        drop across as it works it’s way through the sensor to the
-        negative side of the power supply.
+    > For NPN sensors (sinking sensors), install a jumper from where the white wire of the sensor was connected (the PLC input) to where the Negative Blue wire was connected so as to sink voltage from the input.  
+    > The PLC input in this case is obviously a sourcing input because it provides a voltage with a load for said voltage to drop across as it works it’s way through the sensor to the negative side of the power supply.  
 
     4.  Rather than worrying about what kind of sensor you are trying to
         jump out, it may be better to just measure the voltage at the
