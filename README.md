@@ -347,7 +347,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Broken signal wire? Check for signal at the source (relay, PLC output, ethernet signal)  
             > Remote into the PLC with a laptop. Check the ladder logic to see if the drive is getting a run signal.  
             > Remote into the VFD with a laptop. Check to see if the drive is getting a run signal.  
-            > skip to the section [When machines ... lack a starting signal:](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal) for more ideas.  
+            > Skip to the section [When machines ... lack a starting signal:](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal) for more ideas.  
             
             > If VFD is getting signal and seems to be working, skip to the section [If motors and actuators...](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#if-motors-and-actuators-are-moving-in-one-direction-but-not-at-all-in-the-other)  
             
