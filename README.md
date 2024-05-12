@@ -344,7 +344,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > If the VFD is not providing power to the motor when pressing the start button then check that the VFD is getting a run signal when pressing the start button.  
             
             > If no signal:  
-            > Broken signal wire? Check for signal at the source (relay, PLC output, eithernet signal)  
+            > Broken signal wire? Check for signal at the source (relay, PLC output, ethernet signal)  
             > Remote into the PLC with a laptop. Check the ladder logic to see if the drive is getting a run signal.  
             > Remote into the VFD with a laptop. Check to see if the drive is getting a run signal.  
             > skip to the section [When machines ... lack a starting signal:](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal) for more ideas.  
