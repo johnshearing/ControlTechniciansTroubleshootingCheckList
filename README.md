@@ -446,42 +446,18 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     > Black is usually Signal for PNP.  
     
     > For PNP sensors (sourcing sensors), install a jumper from where the black wire of the sensor was connected (the PLC input) to where the Positive Brown wire was connected so as to source voltage to the input.  
-    > The PLC input in this case is obviously a sinking input because it provides a path with a load for the sourced voltage from the sensor to drop across as it works its way to the negative side of the power supply.  
-    > Sinking PLC inputs are normally low and get pulled high when activated.   
+    > The PLC input in this case is a sinking input because it provides a path with a load for the sourced voltage from the sensor to drop across as it works its way to the negative side of the power supply.  
+    > Sinking PLC inputs are low and get pulled high when activated.   
 
     > For NPN sensors (sinking sensors), install a jumper from where the white wire of the sensor was connected (the PLC input) to where the Negative Blue wire was connected so as to sink voltage from the input.  
-    > The PLC input in this case is obviously a sourcing input because it provides a voltage with a load for said voltage to drop across as it works it’s way through the sensor to the negative side of the power supply.  
+    > The PLC input in this case is a sourcing input because it provides a voltage with a load for said voltage to drop across as it works it’s way through the sensor to the negative side of the power supply.  
 
-    4.  Rather than worrying about what kind of sensor you are trying to
-        jump out, it may be better to just measure the voltage at the
-        PLC input when it is not connected to anything. If the input
-        voltage is almost as positive as the positive side of the supply
-        when measured from the negative side then it is a sourcing input
-        and so connecting it to the negative side of the supply will
-        provide a path for the current to flow as electrons journey from
-        one side of the power supply to the other and this will turn the
-        input on. If the input voltage at the input is nearly as
-        negative as the as the negative side of the supply when measured
-        from the positive side then it is a sinking input so connecting
-        it to the positive side of the supply will provide the path
-        needed for electrons to journey from one side of the power
-        supply to the other and this will turn the input on.
-
-    5.  I don’t think there is any harm in using trial and error to find
-        which side of the power supply the input is to be jumped to. If
-        a sourcing input is jumped to the positive side of the supply
-        then nothing will happen - the input will remain off but no
-        damage will occur. In the same way, it would not cause any harm
-        to jump a sinking input to the negative side of the supply. Be
-        careful, however not to accidentally connect the positive side
-        of the supply to the negative side of the supply thinking that
-        one of them is an input. This actually happened to me when I was
-        jumping out an input at some terminal blocks which were not near
-        the PLC and so there was no visual way to tell which terminal
-        was for the input and which were for the positive and negative
-        sides of the supply. In this case it makes sense to check which
-        is which using a voltmeter. A sourcing input will be at a
-        slightly lower voltage than the positive side of the supply and
+    > Rather than worrying about what kind of sensor you are trying to jump out, it may be better to just measure the voltage at the PLC input when it is not connected to anything.
+    > If the input voltage is almost as positive as the positive side of the supply when measured from the negative side then it is a sourcing input and so connecting it to the negative side of the supply will provide a path for the current to flow as electrons journey from one side of the power supply to the other and this will turn the input on.
+    > If the input voltage at the input is nearly as negative as the as the negative side of the supply when measured from the positive side then it is a sinking input so connecting it to the positive side of the supply will provide the path needed for electrons to journey from one side of the power supply to the other and this will turn the input on.
+    
+    > I don’t think there is any harm in using trial and error to find which side of the power supply the input is to be jumped to. If a sourcing input is jumped to the positive side of the supply then nothing will happen - the input will remain off but no damage will occur. In the same way, it would not cause any harm to jump a sinking input to the negative side of the supply. **Be careful, however not to accidentally connect the positive side of the supply to the negative side of the supply thinking that one of them is an input**. This will cause a short circuit.
+    > This actually happened to me when I was jumping out an input at some terminal blocks which were not near the PLC and so there was no visual way to tell which terminal was for the input and which were for the positive and negative sides of the supply. In this case it makes sense to check which is which using a voltmeter. A sourcing input will be at a slightly lower voltage than the positive side of the supply and
         a sinking input will be at a slightly higher voltage than the
         negative side of the supply. So measure at the connection points
         all three possible ways. Two of the connection points will have
