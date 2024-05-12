@@ -306,7 +306,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
             1.  Short circuits in DC Motors:   
                 > Check all rotor windings for shorts at the commutator.   
-                > Place one probe between each of the windings on the rotor and the other probe on the stator winding(s).  
+                > Then place one probe between each of the windings on the rotor and the other probe on the stator winding(s).  
                 > Then test both of those to the thermocouple and to the ground.  
                 > All of these should be open circuits.  
 
