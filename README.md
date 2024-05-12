@@ -420,12 +420,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Then check the resistance between each of the wires and ground. This should also be an open circuit.  
              
             > If wires going from the protector to the motor don't have any shorts then we need to check that none of the wires are broken:  
+            > Disconnect the three power wires at the motor.  
             > Join the three wires from the protector at the motor with a wire nut. Not the motor wires, but the wires going to the motor from the protector.  
             > Check continuity between all three wires at the protector end of the wires.  
             > This will identify which wire (if any) is broken.  
-            > Be sure to disconnect the wires at the motor when the test is done.  
-            
-            > If the wires from the protector to the motor have checked out good then we need to check the motor windings for shorts, opens, and unequal resistances between windings (AC) or across windings in the case of DC motors.  
+
+            > If the wires from the protector to the motor have checked out good then we need to check the motor windings for unequal resistances between windings (AC) or across windings in the case of DC motors.  
             > Also check that there is no short between the windings and the case or ground wires.  
             > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
             
