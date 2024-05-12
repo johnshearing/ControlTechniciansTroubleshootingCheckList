@@ -241,7 +241,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
             1.  Short circuits in DC Motors:   
                 > Check all rotor windings for shorts at the commutator.   
-                > Place one probe between each of the windings on the rotor and the other probe on the the stator winding(s).  
+                > Place one probe between each of the windings on the rotor and the other probe on the stator winding(s).  
                 > Then test both of those to the thermocouple and to the ground.  
                 > All of these should be open circuits.  
 
@@ -250,7 +250,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > Keep in mind that winding resistance must be checked right at the motor with all other wires completely disconnected.  
                 > If the brake is included in the measurement then resistance will not appear to be the same on all the windings.  
                 > The same holds true when checking amperage.  
-                > If the brake is active and the wire being measured goes down stream to the break as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
+                > If the brake is active and the wire being measured goes down stream to the brake as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
         4.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
             > Ensure that all the controls are set correctly.  
@@ -295,7 +295,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check the ladder logic if possible with a Laptop PC to check the state of the PLC.  
             
             > Set up a Watch Application on your Laptop to monitor the state of suspect inputs and outputs of the PLC.  
-            > Use the Watch Application to catch intermitant events which are to fast to catch with the human senses.  
+            > Use the Watch Application to catch intermittent events which are too fast to catch with the human senses.  
             
             > Use the slow motion video function on your smartphone to record machine operation. Maybe you will observe something under slow motion which is not visible at normal speed.
             
@@ -319,15 +319,15 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Often when pushing a button or starting a process.  
             > Usually 24 volt systems but sometimes 110 too.  
             > This is most likely a short circuit.  
-            > This may seem odd if no fuse is blown and nothing is tripped out but this often how 24 volt systems short out.  
+            > This may seem odd if no fuse is blown and nothing is tripped out but this is often how 24 volt systems short out.  
             > If it happens when actuating a button then check the input circuit first by disconnecting the button circuit from the PLC and actuating the input with a jumper.  
             > If the problem is still there then the problem is likely on one of the PLC output circuits although there is a small chance that an input activated right after the button is pushed could be the perpetrator.  
             > To find which one, remove output wires on the PLC one at a time while replacing the previous until the problem disappears.  
             > Then it is a simple matter of running down the short.  
 
         6.  When motors are not moving:  
-            > If motor has an electricly powered brake:  
-            > Be sure the brake is releasing when the motor in energized.  
+            > If motor has an electrically powered brake:  
+            > Be sure the brake is releasing when the motor is energized.  
             
             > If motor is powered by a VFD:  
             > Check for error messages on the VFD    
@@ -408,8 +408,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > If all is good at the protector then the problem is downstream towards the motor.  
             > Check resistance between the three wires at the protector going to the motor.  
             > These wires should all be connected together through the windings of the motor.  
-            > These are the same there wires you disconnected from the protector.  
-            > If there is an electric break on the motor then you will need to disconnect that break from the motor windings before making this test.  
+            > These are the same three wires you disconnected from the protector.  
+            > If there is an electric brake on the motor then you will need to disconnect that brake from the motor windings before making this test.  
             > The resistance should be equal between all three wires going to the motor.  
             > If not, suspect opens or shorts on the motor windings or on the wires going to the motor.  
 
