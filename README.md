@@ -440,18 +440,18 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     > Remove the sensor wires from the PLC terminals after marking them and jump the PLC input Hi or Low as required.  
      
     > To say it in greater detail:  
-    > A solid state sensor will have 3 wires if it is either sinking (NPN) or sourcing (PNP).
-    > A solid state sensor will have 4 wires if it is both sinking and sourcing.
-    > The Brown wire is usually Positive. It gets connected to the positive side of the power supply. 
-    > The Blue wire is usually Negative. It gets connected to the negative side of the power supply.
-    > The White wire is usually Signal for sinking (NPN) sensors.
-    > This wire is an open circuit when the sensor is not triggered and provides a path to the negative side of the power supply when triggered.
-    > It gets connected to sourcing (PNP) inputs on the PLC.
-    > The Black wire is usually Signal for sourcing (PNP) sensors.
-    > This wire is an open circuit when the sensor is not triggered and provides a path to the positive side of the power supply when triggered.
-    > It gets connected to sinking (NPN) inputs on the PLC.
+    > A solid state sensor will have 3 wires if it is either sinking (NPN) or sourcing (PNP).  
+    > A solid state sensor will have 4 wires if it is both sinking and sourcing.  
+    > The Brown wire is usually Positive. It gets connected to the positive side of the power supply.   
+    > The Blue wire is usually Negative. It gets connected to the negative side of the power supply.  
+    > The White wire is usually Signal for sinking (NPN) sensors.  
+    > This wire is an open circuit when the sensor is not triggered and provides a path to the negative side of the power supply when triggered.  
+    > It gets connected to sourcing (PNP) inputs on the PLC.  
+    > The Black wire is usually Signal for sourcing (PNP) sensors.  
+    > This wire is an open circuit when the sensor is not triggered and provides a path to the positive side of the power supply when triggered.  
+    > It gets connected to sinking (NPN) inputs on the PLC.  
     
-    # Document is complete to this point. More work tomorrow
+    # Document is complete to this point. More work tomorrow  
     
     > For PNP sensors (sourcing sensors), install a jumper from where the black wire of the sensor was connected (the PLC input) to where the Positive Brown wire was connected so as to source voltage to the input.  
     > The PLC input in this case is a sinking input because it provides a path with a load for the sourced voltage from the sensor to drop across as it works its way to the negative side of the power supply.  
