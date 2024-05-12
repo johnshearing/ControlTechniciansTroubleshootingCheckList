@@ -283,7 +283,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check that limit switches are not actually up against their limits.  
             > If a machine won’t move in either direction and nothing else seems to be wrong then consider the possibility that both in and out limit switches are activated at the same time.  
  
-            > Important! While taking proper safety precautions, follow the wires. Pull and wiggle connectors. Check that all electrical connections (Power and Signal) to sensors, limit switches, encoders, terminal blocks, PLCs, VFDs and motors are tight and secure. If strange behavior cannot be explained then check for lose electrical connections before giving up and saying I need to look into the PLC. Looking into the PLC will not likely expose loose intermittent electrical connections.  
+            > Important! While taking proper safety precautions, follow the wires. Pull and wiggle connectors. Check that all electrical connections (Power and Signal) to sensors, limit switches, encoders, terminal blocks, PLCs, VFDs and motors are tight and secure. If strange behavior cannot be explained then check for loose electrical connections before giving up and saying I need to look into the PLC. Looking into the PLC will not likely expose loose intermittent electrical connections.  
 
             > Check that input and output cards are seated securely.  
             > Check input and output lights on the PLC. Compare these against photos taken when the system is ready to run.   
