@@ -437,13 +437,21 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
              > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
 
 4.  Jumping out NPN and PNP Sensors at the PLC:
-    > Pull the sensor wires out of the cabinet after marking them and jump the PLC input Hi or Low as required.  
+    > Remove the sensor wires from the PLC terminals after marking them and jump the PLC input Hi or Low as required.  
      
     > To say it in greater detail:  
-    > Brown is usually Positive,  
-    > Blue is usually Negative,  
-    > White is usually Signal for NPN,  
-    > Black is usually Signal for PNP.  
+    > A solid state sensor will have 3 wires if it is either sinking (NPN) or sourcing (PNP).
+    > A solid state sensor will have 4 wires if it is both sinking and sourcing.
+    > The Brown wire is usually Positive. It gets connected to the positive side of the power supply. 
+    > The Blue wire is usually Negative. It gets connected to the negative side of the power supply.
+    > The White wire is usually Signal for sinking (NPN) sensors.
+    > This wire is an open circuit when the sensor is not triggered and provides a path to the negative side of the power supply when triggered.
+    > It gets connected to sourcing (PNP) inputs on the PLC.
+    > The Black wire is usually Signal for sourcing (PNP) sensors.
+    > This wire is an open circuit when the sensor is not triggered and provides a path to the positive side of the power supply when triggered.
+    > It gets connected to sinking (NPN) inputs on the PLC.
+    
+    # Document is complete to this point. More work tomorrow
     
     > For PNP sensors (sourcing sensors), install a jumper from where the black wire of the sensor was connected (the PLC input) to where the Positive Brown wire was connected so as to source voltage to the input.  
     > The PLC input in this case is a sinking input because it provides a path with a load for the sourced voltage from the sensor to drop across as it works its way to the negative side of the power supply.  
@@ -456,42 +464,29 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     > If the input voltage is almost as positive as the positive side of the supply when measured from the negative side then it is a sourcing input and so connecting it to the negative side of the supply will provide a path for the current to flow as electrons journey from one side of the power supply to the other and this will turn the input on.
     > If the input voltage at the input is nearly as negative as the as the negative side of the supply when measured from the positive side then it is a sinking input so connecting it to the positive side of the supply will provide the path needed for electrons to journey from one side of the power supply to the other and this will turn the input on.
     
-    > I don’t think there is any harm in using trial and error to find which side of the power supply the input is to be jumped to. If a sourcing input is jumped to the positive side of the supply then nothing will happen - the input will remain off but no damage will occur. In the same way, it would not cause any harm to jump a sinking input to the negative side of the supply. **Be careful, however not to accidentally connect the positive side of the supply to the negative side of the supply thinking that one of them is an input**. This will cause a short circuit.
-    > This actually happened to me when I was jumping out an input at some terminal blocks which were not near the PLC and so there was no visual way to tell which terminal was for the input and which were for the positive and negative sides of the supply. In this case it makes sense to check which is which using a voltmeter. A sourcing input will be at a slightly lower voltage than the positive side of the supply and
-        a sinking input will be at a slightly higher voltage than the
-        negative side of the supply. So measure at the connection points
-        all three possible ways. Two of the connection points will have
-        nearly the same potential. The odd one will definitely be
-        connected to the power supply. Now measure from the known power
-        supply connection (the odd one) to one of the others switching
-        the red lead of the meter for the black until the reading is
-        positive. If the black lead is on the odd connection then the
-        odd connection runs to the negative side of the power supply. If
-        the red lead is on the odd connection then it runs to the
-        positive side of the supply. Now measure to from the know side
-        of the supply to the unknown connections. One of the readings
-        will show a slightly greater difference in potential. This is
-        the other side of the supply. The lead showing slightly less
-        potential is the input to the PLC. This input can be jumped to
-        the first discovered side of the supply to turn on the input. As
-        a double check to see which of the two undiscovered leads is the
-        input: take a resistor which will provide about 7 mA when the
-        full voltage available from the power supply is applied. For a
-        24 volt supply, this works out to about 3.3K ohms. Now use the
-        Amp meter in series with the resistor to make a path between
-        each of the unknown connections and the known connection to the
-        power supply. The reading with the greatest amperage will be the
-        connection to the other side of the power supply and the
-        connections with the least amperage will be the input to the
-        PLC. Jumping the input to the first known side of the power
-        supply will turn the input on.
-
-    6.  I remember shorting a positive wire to the case of the emergency
-        pull box on the down stacker. This positive wire must have been
-        attached to the input of a PLC and was expecting an NPN sensor
-        to sink it to ground to complete the circuit and light up the
-        LED in the optocoupler. So be careful what is touched when
-        jumping out wires
+    > I don’t think there is any harm in using trial and error to find which side of the power supply the input is to be jumped to. If a sourcing input is jumped to the positive side of the supply then nothing will happen - the input will remain off but no damage will occur. In the same way, it would not cause any harm to jump a sinking input to the negative side of the supply.
+    > **Be careful, however not to accidentally connect the positive side of the supply to the negative side of the supply thinking that one of them is an input. This will cause a short circuit**.  
+    > This actually happened to me when I was jumping out an input at some terminal blocks which were not near the PLC and which did not follow the conventional color codes. So there was no visual way to tell which terminal was for the input and which were for the positive and negative sides of the supply. My actions caused a short circuit and much delay looking for the circuit breaker to turn the PLC back on again.
+    > From this mistake I learned to always put a 1/4 amp fuse inline with the jumper in case I should accidentally jump the positive side of the power supply to the negative thinking one was an input to the PLC.  
+    > When you are not sure which terminals are which, it makes sense to check using a voltmeter.
+    > A sourcing input will be at a slightly lower voltage than the positive side of the supply and a sinking input will be at a slightly higher voltage than the negative side of the supply.
+    > So measure at the connection points all three possible ways.
+    > Two of the connection points will have nearly the same potential.
+    > The odd one will definitely be connected to the power supply.
+    > Now measure from the known power supply connection (the odd one) to one of the others switching the red lead of the meter for the black until the reading is positive.
+    > If the black lead is on the odd connection then the odd connection runs to the negative side of the power supply.
+    > If the red lead is on the odd connection then it runs to the positive side of the supply.
+    > Now measure from the know side of the supply to the unknown connections.
+    > One of the readings will show a slightly greater difference in potential.
+    > This is the other side of the supply.
+    > The lead showing slightly less potential is the input to the PLC.
+    > This input can be jumped to the first discovered side of the supply to turn on the input.
+    > As a double check to see which of the two undiscovered leads is the input: take a resistor which will provide about 7 mA when the full voltage available from the power supply is applied.
+    > For a 24 volt supply, this works out to about 3.3K ohms.
+    > Now use the Amp meter in series with the resistor to make a path between each of the unknown connections and the known connection to the power supply.
+    > The reading with the greatest amperage will be the connection to the other side of the power supply and the connections with the least amperage will be the input to the PLC.
+    > Jumping the input of the PLC to the first known side of the power supply will turn the input on.
+    > Remember that putting a 1/4 amp fuse inline with the jumper will prevent a huge headache in case you have misidentified the terminals.  
 
     7.  The colors mentioned above are not guaranteed on all sensors so
         the following method can be used to identify the type of sensor
