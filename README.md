@@ -367,73 +367,73 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > There should be continuity when energized and none when not energized.  
             > There should be a change in continuity on axillary contacts when changing from energized and not depending on whether or not the contact is normally open or normally closed.  
 
-       8.  #### If motors and actuators are moving in one direction but not at all in the other:  
-           > Suspect a problem in the limit switch circuit or perhaps machine is up against a limit switch and should not be moved.  
-           > Problems with a limit switch are very likely if a machine part has become loose or moved out of alignment.  
-           > Also check that aux contactors on reversing contactors and overloads as well are working.  
+        8.  #### If motors and actuators are moving in one direction but not at all in the other:  
+            > Suspect a problem in the limit switch circuit or perhaps machine is up against a limit switch and should not be moved.  
+            > Problems with a limit switch are very likely if a machine part has become loose or moved out of alignment.  
+            > Also check that aux contactors on reversing contactors and overloads as well are working.  
 
-       8.  If there is at least some movement in both directions:  
-           > More than likely a jam.  
-           > Also consider the possibility that a set screw, key, or pin is missing between a gear and shaft.  
-           > This would explain some movement until power transmission is required.  
+        9.  If there is at least some movement in both directions:  
+            > More than likely a jam.  
+            > Also consider the possibility that a set screw, key, or pin is missing between a gear and shaft.  
+            > This would explain some movement until power transmission is required.  
 
-       10.  Check brushes if applicable that they are seated properly and that they are not worn out.
+        10.  Check brushes if applicable that they are seated properly and that they are not worn out.
   
-       11.  If overloads or VFDs are tripping, if fuses are blowing:  
-            > Reset or replace protector and try again.  
-            > If protection does not trip right away, then observe the motor and the load.  
-            > See if anything is jammed or binding.  
-            > Check for phase imbalance while running (max 2% voltage deviation from average between all three legs and max 10% current deviation on each leg).  
-            > Check power for harmonics (crest factor should be 1.4).  
-            > Cables from VFDs to motors should be as short as possible in order to reduce harmonics.  
+        11.  If overloads or VFDs are tripping, if fuses are blowing:  
+             > Reset or replace protector and try again.  
+             > If protection does not trip right away, then observe the motor and the load.  
+             > See if anything is jammed or binding.  
+             > Check for phase imbalance while running (max 2% voltage deviation from average between all three legs and max 10% current deviation on each leg).  
+             > Check power for harmonics (crest factor should be 1.4).  
+             > Cables from VFDs to motors should be as short as possible in order to reduce harmonics.  
             
-            > Be sure the protector in question corresponds with the malfunctioning motor:    
-            > It is possible, due to mislabeling or other confusion, that the protector you are resetting has nothing to do with the motor you are working on.  
-            > So check continuity on the wires going from protector to motor if there is doubt about which motor a protector is controlling.    
-            > Here is how: Turn off all power (lockout/tagout) when making this test for safety and to avoid false continuity readings caused by phantom voltage.  
-            > Disconnect wires from the motor in question.  
-            > Join the ends of the three power wires coming to the motor from the protector at the motor with a wire nut so that checking continuity can be accomplished right at the protector.  
-            > There should be continuity between all three wires at the protector when the wires are joined at the motor and there should be no continuity between the wires when the or wire nut is removed.  
-            > In this way you are sure which motor the protector is connected to.  
-            > Replace the wires at the motor exactly as they were.  
-            > Do not replace the wires at the protector yet.  
+             > Be sure the protector in question corresponds with the malfunctioning motor:    
+             > It is possible, due to mislabeling or other confusion, that the protector you are resetting has nothing to do with the motor you are working on.  
+             > So check continuity on the wires going from protector to motor if there is doubt about which motor a protector is controlling.    
+             > Here is how: Turn off all power (lockout/tagout) when making this test for safety and to avoid false continuity readings caused by phantom voltage.  
+             > Disconnect wires from the motor in question.  
+             > Join the ends of the three power wires coming to the motor from the protector at the motor with a wire nut so that checking continuity can be accomplished right at the protector.  
+             > There should be continuity between all three wires at the protector when the wires are joined at the motor and there should be no continuity between the wires when the or wire nut is removed.  
+             > In this way you are sure which motor the protector is connected to.  
+             > Replace the wires at the motor exactly as they were.  
+             > Do not replace the wires at the protector yet.  
  
-            > Check that the protector is functioning:  
-            > With the protector still disconnected from the motor, press the start button.  
-            > If the protection still trips while unloaded then replace the protector.   
+             > Check that the protector is functioning:  
+             > With the protector still disconnected from the motor, press the start button.  
+             > If the protection still trips while unloaded then replace the protector.   
             
-            > If the overload does not trip when unloaded (when disconnected from the motor):  
-            > Check for single phasing: Is the protector providing voltage to the motor on all three legs?  
-            > Check voltage between outputs T1, T2, and T3 at the protector.  
-            > Voltages should be equal (all within 2% of the average).  
-            > If one of the legs is not getting voltage then very likely there is a blown fuse up stream.  
+             > If the overload does not trip when unloaded (when disconnected from the motor):  
+             > Check for single phasing: Is the protector providing voltage to the motor on all three legs?  
+             > Check voltage between outputs T1, T2, and T3 at the protector.  
+             > Voltages should be equal (all within 2% of the average).  
+             > If one of the legs is not getting voltage then very likely there is a blown fuse up stream.  
            
-            > If all is good at the protector then the problem is downstream towards the motor.  
-            > Check resistance between the three wires at the protector going to the motor.  
-            > These wires should all be connected together through the windings of the motor.  
-            > These are the same three wires you disconnected from the protector.  
-            > If there is an electric brake on the motor then you will need to disconnect that brake from the motor windings before making this test.  
-            > The resistance should be equal between all three wires going to the motor.  
-            > If not, suspect opens or shorts on the motor windings or on the wires going to the motor.  
+             > If all is good at the protector then the problem is downstream towards the motor.  
+             > Check resistance between the three wires at the protector going to the motor.  
+             > These wires should all be connected together through the windings of the motor.  
+             > These are the same three wires you disconnected from the protector.  
+             > If there is an electric brake on the motor then you will need to disconnect that brake from the motor windings before making this test.  
+             > The resistance should be equal between all three wires going to the motor.  
+             > If not, suspect opens or shorts on the motor windings or on the wires going to the motor.  
 
-            > If a problem is detected from above then we need to determine if the problem is with the wires going to the motor from the protector or if the problem is with the motor windings.  
-            > Testing the wires going to the motor for shorts:  
-            > Disconnect the three wires at the motor. They are already disconnected at the protector.  
-            > Now check resistance between the three wires. It should be an open circuit.  
-            > Then check the resistance between each of the wires and ground. This should also be an open circuit.  
+             > If a problem is detected from above then we need to determine if the problem is with the wires going to the motor from the protector or if the problem is with the motor windings.  
+             > Testing the wires going to the motor for shorts:  
+             > Disconnect the three wires at the motor. They are already disconnected at the protector.  
+             > Now check resistance between the three wires. It should be an open circuit.  
+             > Then check the resistance between each of the wires and ground. This should also be an open circuit.  
              
-            > If wires going from the protector to the motor don't have any shorts then we need to check that none of the wires are broken:  
-            > Disconnect the three power wires at the motor.  
-            > Join the three wires from the protector at the motor with a wire nut. Not the motor wires, but the wires going to the motor from the protector.  
-            > Check continuity between all three wires at the protector end of the wires.  
-            > This will identify which wire (if any) is broken.  
+             > If wires going from the protector to the motor don't have any shorts then we need to check that none of the wires are broken:  
+             > Disconnect the three power wires at the motor.  
+             > Join the three wires from the protector at the motor with a wire nut. Not the motor wires, but the wires going to the motor from the protector.  
+             > Check continuity between all three wires at the protector end of the wires.  
+             > This will identify which wire (if any) is broken.  
 
-            > If the wires from the protector to the motor have checked out good then we need to check the motor windings for unequal resistances between windings (AC) or across windings in the case of DC motors.  
-            > Also check that there is no short between the windings and the case or ground wires.  
-            > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
+             > If the wires from the protector to the motor have checked out good then we need to check the motor windings for unequal resistances between windings (AC) or across windings in the case of DC motors.  
+             > Also check that there is no short between the windings and the case or ground wires.  
+             > Remember to completely disconnect the motor from the rest of the circuit including the brake circuit, if any, and measure right at the wires going to the windings.  
             
-            > If there are no conclusive results and the problem can not be found then maybe these are failing under load only in which case our previous test will not find the problem.  
-            > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
+             > If there are no conclusive results and the problem can not be found then maybe these are failing under load only in which case our previous test will not find the problem.  
+             > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
 
 10.  Glue Systems:
 
