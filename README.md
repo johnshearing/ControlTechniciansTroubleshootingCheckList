@@ -294,7 +294,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
             > Check the ladder logic if possible with a Laptop PC to check the state of the PLC.  
             
-            > Set up a Watch Application on you Laptop to monitor the state of suspect inputs and outputs of the PLC.  
+            > Set up a Watch Application on your Laptop to monitor the state of suspect inputs and outputs of the PLC.  
             > Use the Watch Application to catch intermitant events which are to fast to catch with the human senses.  
             
             > Use the slow motion video function on your smartphone to record machine operation. Maybe you will observe something under slow motion which is not visible at normal speed.
