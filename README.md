@@ -354,7 +354,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > If motor power comes from a contactor:  
             > Check that there is power voltage between all three supply side terminals of the contactor.  
             > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
-            > If no signal, skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-not-moving-for-lack-of-signal)  
+            > If no signal, skip to the section [When machines ... lack a starting signal:](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal) for more ideas.  
             
             > Assuming you have signal:  
             > Check individual contacts on the contactor with a voltmeter.  
