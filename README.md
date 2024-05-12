@@ -435,89 +435,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
              > If there are no conclusive results and the problem can not be found then maybe these are failing under load only in which case our previous test will not find the problem.  
              > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
 
-10.  Glue Systems:
-
-    1.  Various Parts:
-
-        1.  Tank: Is the valve open? Is the cover off the top? Is the
-            > tank empty? Is the glue in the tank contaminated? This can
-            > happen if new glue is poured in over the skin that forms
-            > over the top of old glue. Now the skin is invisible and no
-            > longer on the top. As the level goes down the skin gets
-            > sucked into the glue lines and no one suspects because the
-            > tank is not empty.
-
-        2.  Pump near the tank: Is the pump working properly? If there
-            > is glue on the pump – probably not. If there is air in the
-            > lines it could be coming from a faulty pump. If there are
-            > two pumps then one can do the work of both in a pinch.
-
-        3.  Processor or controller. Thumb switches are sometimes
-            > intermittent. These can be replaced or disassembled and
-            > cleaned. Try reseating or replacing cards. Make sure that
-            > all screw terminals are tight. Try switching from channel
-            > 1 to channel 2. Try exercising any pots on the boards. Try
-            > exercising any thumb switches on any of the boards. Also
-            > try testing any or all thumb switches with a meter.
-
-        4.  Photo Eye, Wire, and Reflector if any: Check that the photo
-            > eye is operating, Check that the eye is not over a cut out
-            > feature of the box that is causing it to trigger at the
-            > wrong time. Check that the eye sensitivity is correct. To
-            > check: place product about 2 inches greater distance from
-            > the eye than normal then adjust sensitivity until the
-            > light comes on. Check that the product is not bouncing as
-            > it passes under the eye. Check that the product is tight
-            > in the folding belts or pull rolls and that there is an
-            > equal distance between the boxes as they pass under the
-            > eye and past the glue nozzle. Check that no broken or
-            > loose parts are moving into the eye’s field of view. Check
-            > that the wire is secure and in good condition. Check that
-            > the Controller is able to discern when the eye is actuated
-            > and when not.
-
-        5.  Encoder, Encoder Wheel, Supporting Wheel (ZLR-2), Belt, and
-            > wire: Check that the encoder is in good condition and
-            > moving freely. Check that all the wheels are in good
-            > condition. Check that the belt is tracking well under the
-            > encoder wheel and is in good condition. Check that the
-            > wire to the encoder is in good condition. If all of these
-            > are good and the glue pattern is erratic, then try
-            > changing the encoder.
-
-        6.  Nozzle: Ensure the nozzle is clean.
-
-        7.  Air Actuated Glue Valve, and Solenoid Actuated Air Valve:
-            > The air valve actuates the glue valve. If there is plenty
-            > of glue pressure going into the glue valve then actuate
-            > the air valve by hand to see if glue comes out. If the
-            > glue comes out at a good steady flow and is responsive
-            > when activating and deactivating the valve, then we know
-            > that the glue valve is not the problem. If flow is poor or
-            > if the valve is not very responsive then suspect that the
-            > glue valve needs a rebuild or perhaps the air valve needs
-            > to be lubricated or replaced. Also consider a lack of air
-            > pressure. Now activate the air valve electrically. If glue
-            > comes out at a good steady flow and is responsive when
-            > activating and deactivating then the air valve is not the
-            > problem. If the flow is poor or if the valve is not very
-            > responsive the suspect lack of air pressure, lack of
-            > lubrication, a bad valve, or a bad solenoid. If glue is
-            > dispenses ok when running slow but not when running fast
-            > then suspect turbulence caused by some kind of crap in the
-            > lines or in the valves.
-
-        8.  Glue Lines, Glue Filters, Regulators, Accumulator:
-            > Disconnect glue line at the quick disconnect. Check flow.
-            > If flow is poor then work your way back. Are regulators
-            > all regulators (glue and air) set correctly? Get a
-            > baseline. You need to know what the regulators are set at
-            > when the system is running well. Are Lines clear? Is
-            > filter clogged? Is pump working? Is Tank valve open? Is
-            > cover on top of tank lose?
-
-
-
 11.  Jumping out NPN and PNP Sensors
 
     1.  Pull the sensor wires out of the cabinet after marking them and
@@ -740,27 +657,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 provide and wire to the input if you want the PLC to
                 think that the sensor has been deactivated.
 
+12.  Sinking and Sourcing Cards:  
+     >  DC Sinking Input Cards:  
+     > There is one common terminal which is at 0 volts.  
+     > The inputs are at 24 volts when False (unlit) and 0 volts when True (lit).  
 
-
-12.  Sinking and Sourcing Cards
-
-    1.  It is possible that signal lines start at ground and are pulled
-        to 24 volts when switches are closed.
-
-    2.  DC sinking input cards:
-
-        1.  There is one common terminal which is at 0 volts.
-
-
-
-1.  2.  2.  The inputs are at 24 volts when False (unlit) and 0 volts
-            when True (lit).
-
-    3.  DC Sourcing Input Cards
-
-        1.  There is one common terminal at 24 volts.
-
-
-
-1.  1.  2.  The inputs are at 0 volts when False (unlit) and 24 volts
-            when True (lit).
+     > DC Sourcing Input Cards:  
+     > There is one common terminal at 24 volts.  
+     > The inputs are at 0 volts when False (unlit) and 24 volts when True (lit).  
