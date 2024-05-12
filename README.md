@@ -205,7 +205,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Make sure all switches are in the operational positions.  
             > Check for error messages or error lights at the PLCs.  
             > Check for error messages or error lights at the VFDs.  
-            > Check for error messages at the HMIs.
+            > Check for error messages at the HMIs.  
             > Check for error messages at the computer console.  
             > It never hurts to just clear the machine, power down, and reset.
                    
