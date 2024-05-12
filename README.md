@@ -223,7 +223,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > lose parts nearby, actuated or not as needed, and that the target is painted as required or that reflectors are clean.  
             > Check that wiring is secure, connectors are seated, and terminal screws are tight.  
             > When replacing sensors, ensure that settings on the new sensors are the same as settings on the old.  
-            > Look for power lights and fault lights on PLCs, Power supplies, Communications modules, HMIs and Computer Consoles.      
+            > Look for power lights and fault lights on PLCs, Power supplies, VFDs, Communications modules, HMIs and Computer Consoles.      
             > Check the ladder logic if possible with a Laptop PC to see what conditions are not being met.   
             > Suspect bad input or output cards on PLC.  
             > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well.   
@@ -253,7 +253,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 > If the brake is active and the wire being measured goes down stream to the break as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
 
         4.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
-            > Ensure that all the controls are set correctly.    
+            > Ensure that all the controls are set correctly.  
+            > Make sure all switches are in the operational positions.  
             > Check for error messages or error lights at the PLCs.  
             > Check for error messages or error lights at the VFDs.  
             > Check for error messages at the HMIs.  
@@ -262,7 +263,17 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check that photo eyes and reflectors are clean.  
             > Check that sensors, reflectors, limit switches are adjusted and or focused properly.  
             > Check if unwanted reflections are confusing photo eyes.  
-            > Check for faulty or broken sensors or limit switches.  
+            > Check for faulty or broken sensors and limit switches.  
+            
+            > Check for broken wires on sensors.  
+            > If the signal wire is broken but the power and common wires are good then the sensor will appear to function but no signal will arrive at the PLC or relay.  
+            
+            > When changing sensors, be sure to note original position.  
+            > Leave stop nuts in place so as to know the correct placement of new sensor.  
+            > Take photos, mark wires, and make diagrams before disconnecting devices.  
+            > If possible, remove and replace only one wire at a time.  
+            
+            > Are limit switches hot (temperature)? Water inside switches?  
 
             > Check that encoders, sensors and limit switches are fastened securely.    
             > Dithering (erratic motion) is a sign of loose encoder.  
@@ -277,8 +288,19 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check that input and output cards are seated securely.  
             > Check input and output lights on the PLC. Compare these against photos taken when the system is ready to run.   
             > If PLC inputs and outputs are bypassed using multiplexers then check the lights on the multiplexers.  
+ 
+            > Check the manual for troubleshooting tips and look at the wiring diagrams.
+            > Look over the ladder logic in the documentation.  
 
-            > Check the ladder logic if possible with a Laptop PC or look over the ladder logic in the documentation.
+            > Check the ladder logic if possible with a Laptop PC to check the state of the PLC.  
+            
+            > Set up a Watch Application on you Laptop to monitor the state of suspect inputs and outputs of the PLC.  
+            > Use the Watch Application to catch intermitant events which are to fast to catch with the human senses.  
+            
+            > Use the slow motion video function on your smartphone to record machine operation. Maybe you will observe something under slow motion which is not visible at normal speed.
+            
+            > Use an infrared camera if available and look for unusual sources of heat.  
+            > These could indicate jams, clogs, leaks, loose wires, faulty electronics and more.  
 
             > Check the health of the motors:  
             > Measure voltage, freq, power factor and amperage on all legs loaded and unloaded.  
@@ -289,7 +311,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check input voltage and output voltage.  
             > Use the meter’s low pass filter (if available) when measuring the output of a VFD.  
 
-            > Check for proper voltages from power supplies and from source power.  
+            > Check for proper voltages from power supplies and from source power.
+            
+            > Call the manufacturer 
 
         5.  If there is a momentary loss of power (for just a second or less):  
             > Often when pushing a button or starting a process.  
@@ -321,12 +345,12 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             
             > If no signal:  
             > Broken signal wire? Check for signal at the source (relay, PLC output, eithernet signal)  
-            > Remote into the PLC to see if the drive is getting signal.  
-            > skip to the section [When not moving for lack of signal](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal)  
-            >
+            > Remote into the PLC with a laptop. Check the ladder logic to see if the drive is getting a run signal.  
+            > Remote into the VFD with a laptop. Check to see if the drive is getting a run signal.  
+            > skip to the section [When machines ... lack a starting signal:](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#when-machines-move-erratically-move-uncommanded-stop-uncommanded-wont-move-move-at-a-speed-unexpected-or-lack-a-starting-signal) for more ideas.  
+            
             > If VFD is getting signal and seems to be working, skip to the section [If motors and actuators...](https://github.com/johnshearing/ControlTechniciansTroubleshootingCheckList/blob/main/README.md#if-motors-and-actuators-are-moving-in-one-direction-but-not-at-all-in-the-other)  
-            >
-            > 
+            
             > If motor power comes from a contactor:  
             > Check that there is power voltage between all three supply side terminals of the contactor.  
             > Check if contactors are getting signal voltage across the contactor's coil when pressing the start button on the machine.  
@@ -407,57 +431,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             
             > If there are no conclusive results and the problem can not be found then maybe these are failing under load only in which case our previous test will not find the problem.  
             > Replace motor or actuator and replace the protector (contactor, overload, VFD) as well and try again.  
-
-
-
-       10.  #### When not moving for lack of signal:  
-
-                16. Call the manufacturer
-
-                17. Check the manual for troubleshooting tips and look
-                    at the wiring diagrams
-
-                18. Check for proper voltages from power supplies and
-                    from source power.
-
-                24. Check that input and output cards are seated
-                    securely.
-
-                25. Check that terminal blocks are seated securely.
-
-                26. Check sensor, limit switch, encoder and relay
-                    connections at the PLC terminal blocks
-
-                27. Check for broken wires. If the signal wire is broken
-                    but the power and common wires are good then the
-                    sensor will appear to function but no signal will
-                    arrive at the PLC or relay.
-
-                31. When changing sensors, be sure to note original
-                    position. Leave stop nuts in place so as to know the
-                    correct placement of new sensor. Take photos, mark
-                    wires, and make diagrams before disconnecting
-                    devices. If possible, remove and replace only one
-                    wire at a time.
-
-                33. Are sensors or switches hot (temperature)? Water
-                    inside?
-
-                41. Make sure all switches are in the operational
-                    positions.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 10.  Glue Systems:
 
