@@ -380,7 +380,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Reset or replace protector and try again.  
             > If protection does not trip right away, then observe the motor and the load.  
             > See if anything is jammed or binding.  
-            > Check for phase imbalance while running (max 2% voltage deviation from average and max 10% current deviation).  
+            > Check for phase imbalance while running (max 2% voltage deviation from average between all three legs and max 10% current deviation on each leg).  
             > Check power for harmonics (crest factor should be 1.4).  
             > Cables from VFDs to motors should be as short as possible in order to reduce harmonics.  
             
