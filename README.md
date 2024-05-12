@@ -228,31 +228,9 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Suspect bad input or output cards on PLC.  
             > It never hurts to turn power off and back on again if any kind of control issue is suspected and exercise all overloads while the machine is off as well.   
 
-        2.  Fried components:  
-            > Ask what devices are being energized at the moment your components are being fried?   
-            > Ladder logic and electrical schematics should be consulted.  
-            > Disconnect all those devices.  
-            > Next disconnect the components which are getting cooked and replace with dummy loads on each wire coming in.  
-            > Appropriately sized light bulbs and fuses are perfect for this.  
-            > Finally, energize the devices one at a time until fuses start blowing.  
-            > The blown fuses will lead you to the shorting component.  
 
-        3.  Shorted Motors:
 
-            1.  Short circuits in DC Motors:   
-                > Check all rotor windings for shorts at the commutator.   
-                > Place one probe between each of the windings on the rotor and the other probe on the stator winding(s).  
-                > Then test both of those to the thermocouple and to the ground.  
-                > All of these should be open circuits.  
-
-            2.  Short circuits in AC motors:  
-                > Check for single phasing (voltage at T1, T2, and T3). Check for equal resistance between all three windings.  
-                > Keep in mind that winding resistance must be checked right at the motor with all other wires completely disconnected.  
-                > If the brake is included in the measurement then resistance will not appear to be the same on all the windings.  
-                > The same holds true when checking amperage.  
-                > If the brake is active and the wire being measured goes down stream to the brake as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
-
-        4.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
+        2.  #### When machines move erratically, move uncommanded, stop uncommanded, won’t move, move at a speed unexpected, or lack a starting signal:  
             > Ensure that all the controls are set correctly.  
             > Make sure all switches are in the operational positions.  
             > Check for error messages or error lights at the PLCs.  
@@ -311,9 +289,34 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
             > Check input voltage and output voltage.  
             > Use the meter’s low pass filter (if available) when measuring the output of a VFD.  
 
-            > Check for proper voltages from power supplies and from source power.
+            > Check for proper voltages from power supplies and from source power.  
             
-            > Call the manufacturer 
+            > Call the manufacturer  
+
+        3.  Fried components:  
+            > Ask what devices are being energized at the moment your components are being fried?   
+            > Ladder logic and electrical schematics should be consulted.  
+            > Disconnect all those devices.  
+            > Next disconnect the components which are getting cooked and replace with dummy loads on each wire coming in.  
+            > Appropriately sized light bulbs and fuses are perfect for this.  
+            > Finally, energize the devices one at a time until fuses start blowing.  
+            > The blown fuses will lead you to the shorting component.  
+
+        4.  Shorted Motors:
+
+            1.  Short circuits in DC Motors:   
+                > Check all rotor windings for shorts at the commutator.   
+                > Place one probe between each of the windings on the rotor and the other probe on the stator winding(s).  
+                > Then test both of those to the thermocouple and to the ground.  
+                > All of these should be open circuits.  
+
+            2.  Short circuits in AC motors:  
+                > Check for single phasing (voltage at T1, T2, and T3). Check for equal resistance between all three windings.  
+                > Keep in mind that winding resistance must be checked right at the motor with all other wires completely disconnected.  
+                > If the brake is included in the measurement then resistance will not appear to be the same on all the windings.  
+                > The same holds true when checking amperage.  
+                > If the brake is active and the wire being measured goes down stream to the brake as well as to the winding then it will appear as if amperage measurements on that winding are greater than on the other two.  
+
 
         5.  If there is a momentary loss of power (for just a second or less):  
             > Often when pushing a button or starting a process.  
