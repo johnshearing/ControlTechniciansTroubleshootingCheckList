@@ -657,11 +657,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 provide and wire to the input if you want the PLC to
                 think that the sensor has been deactivated.
 
-12.  Sinking and Sourcing Cards:  
+13.  Sinking and Sourcing Cards:  
      >  DC Sinking Input Cards:  
      > There is one common terminal which is at 0 volts.  
-     > The inputs are at 24 volts when False (unlit) and 0 volts when True (lit).  
+     > The inputs are at 24 volts when False (unlit) and pulled down to 0 volts when True (lit).  
 
      > DC Sourcing Input Cards:  
      > There is one common terminal at 24 volts.  
-     > The inputs are at 0 volts when False (unlit) and 24 volts when True (lit).  
+     > The inputs are at 0 volts when False (unlit) and pulled up to 24 volts when True (lit).  
