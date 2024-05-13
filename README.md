@@ -497,52 +497,18 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     > Remember that putting a 1/4 amp fuse inline with the jumper will prevent a huge headache in case you have misidentified the terminals.   
 
 5. Identifying Sensors In The Field And Jumping PLC Inputs Accordingly.
-   > The colors mentioned above are not guaranteed on all sensors so the following method can be used to identify the type of sensor and how the signal wire is being used.  
-
-   > If there are five wires, then the sensor is most likely being used as a relay.  
-   > One wire will be attached to the positive side of the supply (probably brown).  
-   > One wire will be attached to the negative side of the power supply (probably blue).  
-   > The three wires left will be for the relay.  
-   > There will be a common wire, a wire connected to the normally closed contact and a wire connected to the normally open contact.  
-   > To find out which is which, disconnect these three wires and check continuity while the sensor is dormant and then active. Make a map of what was learned.  
-   > Then measure the voltage on the common wire.  
-   > This is the voltage which must be brought to the input of the PLC where the normally closed contact was wired if you want the PLC to think the sensor is inactive or bring the voltage to the PLC where the Normally open contact was wired if you want the PLC to think that the sensor is active.  
-
-        2.  If there are four wires connected to the sensor then there
-            are three possibilities:
-
-            1.  If there are only two wires connected to the sensor then
-                the sensor can only be a simple switch which either
-                opens or closes when the sensor is activated. As
-                mentioned above, this type of sensor must be connected
-                to a relay or some other type of load or a short circuit
-                will result.
-
-            2.  If there are three wires connected to the sensor then
-                there are three possibilities:
-
-                1.  The sensor is PNP (sourcing only)
-
-                    1.  The signal wire will connect with the positive
-                        side of the supply when either active or
-                        deactivated depending on the sensor.
-
-                2.  The sensor is NPN (sinking only),
-
-                    1.  The signal wire will connect with the negative
-                        side of the supply when either active or
-                        deactivated depending on the sensor.
-
-                3.  The sensor is a simple switch with an extra wire for
-                    ground.
-
-                    1.  Normally these sensors are AC and will have a
-                        green wire to ground the case. The other two
-                        wires put the sensor in series with the load and
-                        must both be either on the positive side of the
-                        load or on the negative side but not one on
-                        either side because that would cause a short
-                        circuit.
+   > The colors mentioned above are not guaranteed on all sensors so the following method can be used to identify the type of sensor and how the signal wire is being used.
+   
+   > If there are only two wires connected to the sensor then the sensor can only be a simple switch which either opens or closes when the sensor is activated.
+   > This type of sensor must be connected to a relay or some other type of load or a short circuit will result.
+   
+   > If there are three wires connected to the sensor then there are three possibilities:
+   > The sensor is PNP (sourcing only)
+   > The signal wire will connect with the positive side of the supply when either active or deactivated depending on the sensor.
+   > The sensor is NPN (sinking only)
+   > The signal wire will connect with the negative side of the supply when either active or deactivated depending on the sensor.
+   > The sensor is a simple switch with an extra wire for ground.
+   > Normally these sensors are AC and will have a green wire to ground the case. The other two wires put the sensor in series with the load and must both be either on the positive side of the load or on the negative side but not one on either side because that would cause a short circuit.
 
                 4.  Multimeter tests must be made with the sensor
                     connected to a supply in order to see what kind of
@@ -620,6 +586,28 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 think that the sensor has been activated or do not
                 provide and wire to the input if you want the PLC to
                 think that the sensor has been deactivated.
+
+
+
+
+
+
+
+
+
+
+
+
+   > If there are four wires connected to the sensor then there are three possibilities:
+
+   > If there are five wires, then the sensor is most likely being used as a relay.  
+   > One wire will be attached to the positive side of the supply (probably brown).  
+   > One wire will be attached to the negative side of the power supply (probably blue).  
+   > The three wires left will be for the relay.  
+   > There will be a common wire, a wire connected to the normally closed contact and a wire connected to the normally open contact.  
+   > To find out which is which, disconnect these three wires and check continuity while the sensor is dormant and then active. Make a map of what was learned.  
+   > Then measure the voltage on the common wire.  
+   > This is the voltage which must be brought to the input of the PLC where the normally closed contact was wired if you want the PLC to think the sensor is inactive or bring the voltage to the PLC where the Normally open contact was wired if you want the PLC to think that the sensor is active.  
 
 13.  Sinking and Sourcing Cards:  
      > DC Sinking Input Cards:  
