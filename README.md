@@ -496,28 +496,17 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     > Jumping the input of the PLC to the first known side of the power supply will turn the input on.  
     > Remember that putting a 1/4 amp fuse inline with the jumper will prevent a huge headache in case you have misidentified the terminals.   
 
-    # Document is complete to this point. More work tomorrow  
+5. Identifying Sensors In The Field And Jumping PLC Inputs Accordingly.
+   > The colors mentioned above are not guaranteed on all sensors so the following method can be used to identify the type of sensor and how the signal wire is being used.  
 
-    7.  The colors mentioned above are not guaranteed on all sensors so
-        the following method can be used to identify the type of sensor
-        and how the signal wire is being used.
-
-        1.  If there are five wires, then the sensor is most likely
-            being used as a relay. One wire will be attached to the
-            positive side of the supply (probably brown). One wire will
-            be attached to the negative side of the power supply
-            (probably blue). The three wires left will be for the relay.
-            There will be a common wire, a wire connected to the
-            normally closed contact and a wire connected to the normally
-            open contact. To find out which is which, disconnect these
-            three wires and check continuity while the sensor is dormant
-            and then active. Make a map of what was learned. Then
-            measure the voltage on the common wire. This is the voltage
-            which must be brought to the input of the PLC where the
-            normally closed contact was wired if you want the PLC to
-            think the sensor is inactive or bring the voltage to the PLC
-            were the Normally open contact was wired if you want the PLC
-            to think that the sensor is active.
+   > If there are five wires, then the sensor is most likely being used as a relay.  
+   > One wire will be attached to the positive side of the supply (probably brown).  
+   > One wire will be attached to the negative side of the power supply (probably blue).  
+   > The three wires left will be for the relay.  
+   > There will be a common wire, a wire connected to the normally closed contact and a wire connected to the normally open contact.  
+   > To find out which is which, disconnect these three wires and check continuity while the sensor is dormant and then active. Make a map of what was learned.  
+   > Then measure the voltage on the common wire.  
+   > This is the voltage which must be brought to the input of the PLC where the normally closed contact was wired if you want the PLC to think the sensor is inactive or bring the voltage to the PLC where the Normally open contact was wired if you want the PLC to think that the sensor is active.  
 
         2.  If there are four wires connected to the sensor then there
             are three possibilities:
