@@ -499,7 +499,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 5. Identifying Sensors In The Field And Jumping PLC Inputs Accordingly.
    > The colors mentioned above are not guaranteed on all sensors so the following method can be used to identify the type of sensor and how the signal wire is being used.
    
-   > If there are only two wires connected to the sensor then the sensor can only be a simple switch which either opens or closes when the sensor is activated.
+   > If there are only two wires connected to the sensor:
+   > Then the sensor can only be a simple switch which either opens or closes when the sensor is activated.
    > This type of sensor must be connected to a relay or some other type of load or a short circuit will result.
    
    > If there are three wires connected to the sensor then there are three possibilities:
@@ -509,29 +510,14 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
    > The signal wire will connect with the negative side of the supply when either active or deactivated depending on the sensor.
    > The sensor is a simple switch with an extra wire for ground.
    > Normally these sensors are AC and will have a green wire to ground the case. The other two wires put the sensor in series with the load and must both be either on the positive side of the load or on the negative side but not one on either side because that would cause a short circuit.
-
-                4.  Multimeter tests must be made with the sensor
-                    connected to a supply in order to see what kind of
-                    sensor it is.
-
-                    1.  Test to see if it is a simple switch first
-                        because if it is and the brown and blue leads
-                        are connected to the pos and neg sides of the
-                        supply, a short circuit will result when the
-                        sensor is activated. To avoid this, put a relay
-                        coil or other load between the sensor and either
-                        side of the supply (a series circuit) so as to
-                        act as a load. Check if current is flowing
-                        through the circuit. Now activate the sensor and
-                        check if current is flowing through the circuit.
-                        If no current flows in either case than the
-                        sensor is not a simple switch. Once it has been
-                        determined that the sensor is not just a simple
-                        switch, the brown and blue wires can be
-                        connected to positive and negative sides of the
-                        supply and the signal wire can then be checked
-                        with the sensor activated and deactivated so as
-                        to determine if the sensor is NPN or PNP.
+   
+   > Multimeter tests must be made with the sensor connected to a supply in order to see what kind of sensor it is.
+   > Test to see if it is a simple switch first because if it is and the brown and blue leads are connected to the pos and neg sides of the supply, a short circuit will result when the sensor is activated.
+   > To avoid this, put a relay coil or other load between the sensor and either side of the supply (a series circuit) so as to act as a load.
+   > Check if current is flowing through the circuit.
+   > Now activate the sensor and check if current is flowing through the circuit.
+   > If no current flows in either case than the sensor is not a simple switch.
+   > Once it has been determined that the sensor is not just a simple switch, the brown and blue wires can be connected to positive and negative sides of the supply and the signal wire can then be checked with the sensor activated and deactivated so as to determine if the sensor is NPN or PNP.
 
             3.  The sensor is PNP (sourcing) only in which case one of
                 the two signal wires will source (provide a path to the
