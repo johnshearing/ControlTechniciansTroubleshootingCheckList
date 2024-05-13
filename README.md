@@ -453,11 +453,11 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
     
     > For PNP sensors (sourcing sensors), install a jumper from where the black wire of the sensor was connected (the PLC input) to where the Positive Brown wire was connected so as to source voltage to the input.  
     > The PLC input in this case is a sinking input because it provides a path with a load for the sourced voltage from the sensor to drop across as it works its way to the negative side of the power supply.  
-    > Sinking PLC inputs are near 0 volts when False (unlit) and get pulled up close to supply voltage by the sensor when True (lit).  
+    > Sinking PLC inputs are near 0 volts when False (unlit) and get pulled up close to supply voltage by the activated sourcing sensor when True (lit).  
 
     > For NPN sensors (sinking sensors), install a jumper from where the white wire of the sensor was connected (the PLC input) to where the Negative Blue wire was connected so as to sink voltage from the input.  
     > The PLC input in this case is a sourcing input because it provides a voltage with a load for said voltage to drop across as it works it’s way through the sensor to the negative side of the power supply.  
-    > Sourcing PLC inputs are near supply voltage when False (unlit) and get pulled down to near 0 volts by the sensor when True (lit).  
+    > Sourcing PLC inputs are near supply voltage when False (unlit) and get pulled down to near 0 volts by the activated sinking sensor when True (lit).  
 
     # Document is complete to this point. More work tomorrow  
 
@@ -626,8 +626,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 13.  Sinking and Sourcing Cards:  
      > DC Sinking Input Cards:  
      > There is one common terminal which is at supply voltage.  
-     > The inputs are near 0 volts when False (unlit) and get pulled up close to supply voltage when True (lit).  
+     > Sinking PLC inputs are near 0 volts when False (unlit) and get pulled up close to supply voltage by the activated sourcing sensor when True (lit).  
 
      > DC Sourcing Input Cards:  
      > There is one common terminal at 0 volts.  
-     > The inputs are at supply voltage when False (unlit) and get pulled down to near 0 volts when True (lit).  
+     > Sourcing PLC inputs are near supply voltage when False (unlit) and get pulled down to near 0 volts by the activated sinking sensor when True (lit). 
