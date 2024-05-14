@@ -544,8 +544,8 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
    > The three wires left will be for the relay.  
    > There will be a common wire, a wire connected to the normally closed contact, and a wire connected to the normally open contact.  
    > To find out which is which, disconnect these three wires and check continuity while the sensor is dormant and then active. Make a map of what was learned.  
-   > Then measure the voltage on the common wire.  
-   > This is the voltage which must be brought to the input of the PLC where the normally closed contact was wired if you want the PLC to think the sensor is inactive or bring the voltage to the PLC where the Normally open contact was wired if you want the PLC to think that the sensor is active.  
+   > Then measure the voltage where the common wire was connected to the PLC.  
+   > This is the voltage which must be brought to the input of the PLC where the normally closed contact was wired if you want the PLC to think the sensor is inactive or bring the voltage to the PLC where the normally open contact was wired if you want the PLC to think that the sensor is active.  
 
 13.  Sinking and Sourcing Cards:  
      > DC Sinking Input Cards:  
