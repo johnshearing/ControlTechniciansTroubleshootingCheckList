@@ -542,7 +542,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
    > One wire will be attached to the positive side of the supply (probably brown).  
    > One wire will be attached to the negative side of the power supply (probably blue).  
    > The three wires left will be for the relay.  
-   > There will be a common wire, a wire connected to the normally closed contact and a wire connected to the normally open contact.  
+   > There will be a common wire, a wire connected to the normally closed contact, and a wire connected to the normally open contact.  
    > To find out which is which, disconnect these three wires and check continuity while the sensor is dormant and then active. Make a map of what was learned.  
    > Then measure the voltage on the common wire.  
    > This is the voltage which must be brought to the input of the PLC where the normally closed contact was wired if you want the PLC to think the sensor is inactive or bring the voltage to the PLC where the Normally open contact was wired if you want the PLC to think that the sensor is active.  
