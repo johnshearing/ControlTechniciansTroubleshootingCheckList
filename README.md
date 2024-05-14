@@ -519,26 +519,13 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
    > If no current flows in either case than the sensor is not a simple switch.  
    > Once it has been determined that the sensor is not just a simple switch, the brown and blue wires can be connected to positive and negative sides of the supply and the signal wire can then be checked with the sensor activated and deactivated so as to determine if the sensor is NPN or PNP.  
 
-            3.  The sensor is PNP (sourcing) only in which case one of
-                the two signal wires will source (provide a path to the
-                positive side of the supply) when the sensor has been
-                activated, and the other will source when the sensor is
-                dormant.
 
-            4.  The sensor is NPN (sinking) in which case the one of the
-                two signal wires will sink current (provide a path to
-                the negative side of the supply) when the sensor has
-                been activated, and the other will sink current when the
-                sensor is dormant.
-
-            5.  The sensor is both PNP and NPN in which case, one wire
-                will sink and the other will source when the sensor is
-                either active or dormant, depending on the sensor. Some
-                sensors have switches so that you can choose if the
-                sensor sinks and sources upon activation or if it sinks
-                and sources when dormant.
-
-            6.  It will be necessary to determine what kind of sensor
+   > If there are four wires connected to the sensor then there are three possibilities:
+   > A - The sensor is PNP (sourcing) only in which case one of the two signal wires will source (provide a path to the positive side of the supply) when the sensor has been activated, and the other will source when the sensor is dormant.
+   > B - The sensor is NPN (sinking) in which case the one of the two signal wires will sink current (provide a path to the negative side of the supply) when the sensor has been activated, and the other will sink current when the sensor is dormant.
+   > C - The sensor is both PNP and NPN in which case, one wire will sink and the other will source when the sensor is either active or dormant, depending on the sensor.
+   > Some sensors have switches so that you can choose if the sensor sinks and sources upon activation or if it sinks and sources when dormant.
+   > It will be necessary to determine what kind of sensor
                 you have in order to know how to jump it out at the PLC
                 or to replace it with something equivalent in the case
                 that no exact replacement can be found. If no datasheet
@@ -572,19 +559,6 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
                 think that the sensor has been activated or do not
                 provide and wire to the input if you want the PLC to
                 think that the sensor has been deactivated.
-
-
-
-
-
-
-
-
-
-
-
-
-   > If there are four wires connected to the sensor then there are three possibilities:
 
    > If there are five wires, then the sensor is most likely being used as a relay.  
    > One wire will be attached to the positive side of the supply (probably brown).  
