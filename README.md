@@ -510,7 +510,7 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
    > The signal wire will connect with the negative side of the supply when either active or deactivated depending on the sensor.  
    > C - The sensor is a simple switch with an extra wire for ground.  
    > Normally these sensors are AC and will have a green wire to ground the case. The other two wires put the sensor in series with the load and must both be either on the positive side of the load or on the negative side but not one on either side because that would cause a short circuit.  
-   
+   >
    > Multimeter tests must be made with the sensor connected to a supply in order to see what kind of sensor it is.  
    > Test to see if it is a simple switch first because if it is and the brown and blue leads are connected to the pos and neg sides of the supply, a short circuit will result when the sensor is activated.  
    > To avoid this, put a relay coil or other load between the sensor and either side of the supply (a series circuit) so as to act as a load.  
@@ -520,45 +520,23 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
    > Once it has been determined that the sensor is not just a simple switch, the brown and blue wires can be connected to positive and negative sides of the supply and the signal wire can then be checked with the sensor activated and deactivated so as to determine if the sensor is NPN or PNP.  
 
 
-   > If there are four wires connected to the sensor then there are three possibilities:
-   > A - The sensor is PNP (sourcing) only in which case one of the two signal wires will source (provide a path to the positive side of the supply) when the sensor has been activated, and the other will source when the sensor is dormant.
-   > B - The sensor is NPN (sinking) in which case the one of the two signal wires will sink current (provide a path to the negative side of the supply) when the sensor has been activated, and the other will sink current when the sensor is dormant.
-   > C - The sensor is both PNP and NPN in which case, one wire will sink and the other will source when the sensor is either active or dormant, depending on the sensor.
-   > Some sensors have switches so that you can choose if the sensor sinks and sources upon activation or if it sinks and sources when dormant.
-   > It will be necessary to determine what kind of sensor
-                you have in order to know how to jump it out at the PLC
-                or to replace it with something equivalent in the case
-                that no exact replacement can be found. If no datasheet
-                can be found then this can be determined with a
-                multimeter as follows: First connect the positive lead
-                (usually brown) to the positive side of the supply, and
-                the negative lead (usually blue) with the negative side
-                of the supply. With the sensor dormant, attach one lead
-                of the multimeter to the signal wire and touch the other
-                lead to the positive side of the supply and then to the
-                negative side of the supply. If there is no significant
-                difference in the readings then we know that the signal
-                wire is not connected to anything. It is not providing a
-                path to the positive side nor the negative side of the
-                supply. In other words, it is neither sinking nor
-                sourcing when dormant. Now activate the sensor and
-                repeat the test. If there is a significant difference in
-                voltage when touching the positive side of the supply
-                then we know that the signal wire is connected to the
-                negative side of the supply which is to say that it is
-                sinking current. So ground the input of the PLC if you
-                want the PLC to think the sensor has been activated or
-                do not provide any wire to the input if you want the PLC
-                to think the sensor has been deactivated. On the other
-                hand, if a significant difference in voltage is measured
-                when touching the negative side of the power supply then
-                we know that the signal wire is connected to the
-                positive side of the supply which is to say that it is
-                sourcing current. So wire the input of the PLC to the
-                positive side of the power supply if you want the PLC to
-                think that the sensor has been activated or do not
-                provide and wire to the input if you want the PLC to
-                think that the sensor has been deactivated.
+   > If there are four wires connected to the sensor then there are three possibilities:  
+   > A - The sensor is PNP (sourcing) only in which case one of the two signal wires will source (provide a path to the positive side of the supply) when the sensor has been activated, and the other will source when the sensor is dormant.  
+   > B - The sensor is NPN (sinking) in which case the one of the two signal wires will sink current (provide a path to the negative side of the supply) when the sensor has been activated, and the other will sink current when the sensor is dormant.  
+   > C - The sensor is both PNP and NPN in which case, one wire will sink and the other will source when the sensor is either active or dormant, depending on the sensor.  
+   > Some sensors have switches so that you can choose if the sensor sinks and sources upon activation or if it sinks and sources when dormant. 
+   >
+   > It will be necessary to determine what kind of sensor you have in order to know how to jump it out at the PLC or to replace it with something equivalent in the case that no exact replacement can be found.  
+   > If no datasheet can be found then this can be determined with a multimeter as follows:  
+   > First connect the positive lead (usually brown) to the positive side of the supply, and the negative lead (usually blue) with the negative side of the supply.  
+   > With the sensor dormant, attach one lead of the multimeter to the signal wire and touch the other lead to the positive side of the supply and then to the negative side of the supply.  
+   > If there is no significant difference in the readings then we know that the signal wire is not connected to anything.  
+   > It is not providing a path to the positive side nor the negative side of the supply. In other words, it is neither sinking nor sourcing when dormant.  
+   > Now activate the sensor and repeat the test.  
+   > If there is a significant difference in voltage when touching the positive side of the supply then we know that the signal wire is connected to the negative side of the supply which is to say that it is sinking current.  
+   > So ground the input of the PLC if you want the PLC to think the sensor has been activated or do not provide any wire to the input if you want the PLC to think the sensor has been deactivated.  
+   > On the other hand, if a significant difference in voltage is measured when touching the negative side of the power supply then we know that the signal wire is connected to the positive side of the supply which is to say that it is sourcing current.  
+   > So wire the input of the PLC to the positive side of the power supply if you want the PLC to think that the sensor has been activated or do not provide and wire to the input if you want the PLC to think that the sensor has been deactivated.  
 
    > If there are five wires, then the sensor is most likely being used as a relay.  
    > One wire will be attached to the positive side of the supply (probably brown).  
@@ -576,4 +554,4 @@ If the machine is unfamiliar, be sure to work with machine operators that know h
 
      > DC Sourcing Input Cards:  
      > There is one common terminal at 0 volts.  
-     > Sourcing PLC inputs are near supply voltage when False (unlit) and get pulled down to near 0 volts by the activated sinking sensor when True (lit). 
+     > Sourcing PLC inputs are near supply voltage when False (unlit) and get pulled down to near 0 volts by the activated sinking sensor when True (lit).  
