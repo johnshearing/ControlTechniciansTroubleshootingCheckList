@@ -1,3 +1,5 @@
+<a href="https://johnshearing.github.io/">Main list of projects</a>  
+
 # Control Technician's Troubleshooting Checklist
 Factory Electrician's/Control Technician's Troubleshooting Checklist  
 Machines may be different but they are for the most part made of the same components and perform logic.  
